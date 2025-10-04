@@ -1,9 +1,19 @@
+import { useState } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { AboutModal } from "./AboutModal";
+
 interface MenuBarProps {
   activeSection: string;
   onNavigate: (section: string) => void;
 }
 
 export const MenuBar = ({ activeSection, onNavigate }: MenuBarProps) => {
+  const [aboutOpen, setAboutOpen] = useState(false);
   const menuItems = [
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
@@ -15,9 +25,23 @@ export const MenuBar = ({ activeSection, onNavigate }: MenuBarProps) => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-12 bg-menubar-bg border-b border-border/30 flex items-center px-4 z-50 backdrop-blur-sm">
-      <div className="font-semibold text-menubar-text mr-6">🍎 Project Life</div>
-      <nav className="flex gap-4">
+    <>
+      <div className="fixed top-0 left-0 right-0 h-12 bg-menubar-bg border-b border-border/30 flex items-center px-4 z-50 backdrop-blur-sm">
+        <DropdownMenu>
+          <DropdownMenuTrigger className="font-semibold text-menubar-text mr-6 hover:bg-white/10 px-2 py-1 rounded transition-colors outline-none">
+            🍎 Project Life
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="start" className="bg-menubar-bg/95 backdrop-blur-sm border-border/30">
+            <DropdownMenuItem 
+              onClick={() => setAboutOpen(true)}
+              className="text-menubar-text cursor-pointer"
+            >
+              About Project Life
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+        
+        <nav className="flex gap-4">
         {menuItems.map((item) => (
           <button
             key={item.id}
@@ -33,5 +57,8 @@ export const MenuBar = ({ activeSection, onNavigate }: MenuBarProps) => {
         ))}
       </nav>
     </div>
+    
+    <AboutModal open={aboutOpen} onOpenChange={setAboutOpen} />
+    </>
   );
 };
