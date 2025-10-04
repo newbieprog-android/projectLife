@@ -14,9 +14,9 @@ interface AboutModalProps {
 export const AboutModal = ({ open, onOpenChange }: AboutModalProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[500px] bg-window-bg border-window-border">
+      <DialogContent className="sm:max-w-[500px] bg-window-bg border-window-border overflow-hidden [&>button]:hidden">
         {/* Mac Window Title Bar */}
-        <div className="absolute top-0 left-0 right-0 h-8 titlebar-gradient flex items-center px-3 border-b border-border -mt-6 -mx-6 rounded-t-lg">
+        <div className="absolute top-0 left-0 right-0 h-8 titlebar-gradient flex items-center px-3 border-b border-border -mt-6 -mx-6 rounded-t-lg z-10">
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-red-500 cursor-pointer" onClick={() => onOpenChange(false)} />
             <div className="w-3 h-3 rounded-full bg-yellow-500" />
@@ -33,7 +33,7 @@ export const AboutModal = ({ open, onOpenChange }: AboutModalProps) => {
           </div>
           
           <DialogHeader>
-            <DialogTitle className="text-2xl font-bold text-center">
+            <DialogTitle className="text-2xl font-bold text-center text-window-fg">
               Project Life
             </DialogTitle>
           </DialogHeader>
