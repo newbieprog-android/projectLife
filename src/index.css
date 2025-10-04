@@ -82,3 +82,24 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Notes App Styling */
+.notes-sidebar {
+  background-image: 
+    repeating-linear-gradient(
+      transparent,
+      transparent 31px,
+      #d4c4a8 31px,
+      #d4c4a8 32px
+    );
+}
+
+.notes-content {
+  background-image: 
+    repeating-linear-gradient(
+      transparent,
+      transparent 31px,
+      #f0e4c8 31px,
+      #f0e4c8 32px
+    );
+}
