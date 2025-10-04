@@ -7,30 +7,27 @@ interface JournalEntry {
   title: string;
   date: string;
   content: string;
+  isPlaceholder?: boolean;
 }
 
 export const JournalSection = () => {
   const entries: JournalEntry[] = [
     {
-      id: "week1",
-      week: "Week 1",
-      title: "Clarity MVP Launch",
-      date: "Jan 5, 2025",
-      content: "Clarity MVP shipped! Built with Lovable.dev, it helps users understand contracts and policies in seconds.",
+      id: "worthly",
+      week: "Worthly",
+      title: "Worthly MVP Launch",
+      date: "Oct 4, 2025",
+      content: `Worthly, our net worth tracking app, has officially reached the pre-launch milestone. Built entirely on Lovable.dev in true build-in-public style, Worthly simplifies personal finance by helping users track net worth, debts, and savings in one clean dashboard.
+        The authentication system has been finalized with Worthlys new W monogram branding and support for Google and Apple sign-in (coming soon). Our first build focuses on simplicity, security, and clarity, letting early adopters quickly see their financial position at a glance.
+        We are currently in the approval process with Paddle/Lemon Squeezy to handle subscriptions, payments, and compliance. Once approved, Worthly will be available for early sign-ups.`
     },
-    {
-      id: "week2",
-      week: "Week 2",
-      title: "BillSync Prototype Ready",
-      date: "Jan 12, 2025",
-      content: "BillSync's first prototype is complete. Testing the 'bill wallet' feature to auto-deduct recurring payments.",
-    },
-    {
-      id: "week3",
-      week: "Week 3",
-      title: "Legal Hub Goes Live",
-      date: "Jan 19, 2025",
-      content: "Added Terms, Privacy, and Refunds pages to Project Life site for Paddle/Lemon Squeezy compliance.",
+      {
+      id: "comingsoon",
+      week: "Coming Soon",
+      title: "Future Updates",
+      date: "",
+      content: "Stay tuned for upcoming milestones and new product launches.",
+      isPlaceholder: true,
     },
   ];
 
@@ -39,8 +36,8 @@ export const JournalSection = () => {
   return (
     <MacWindow title="Notes — Build Journal" className="max-w-5xl mx-auto">
       <div className="flex h-[500px] -m-6">
-        {/* Left Sidebar - Topic List */}
-        <div className="w-1/3 bg-[#f4e8d0] border-r border-[#d4c4a8] overflow-y-auto notes-sidebar">
+        {/* Left Sidebar */}
+        <div className="w-1/3 bg-[#f4e8d0] border-r border-[#d4c4a8] overflow-y-auto">
           <div className="py-2">
             {entries.map((entry) => (
               <div
@@ -49,11 +46,11 @@ export const JournalSection = () => {
                 className={`px-4 py-3 cursor-pointer transition-colors border-b border-[#e4d8c0] ${
                   selectedEntry.id === entry.id
                     ? "bg-[#e8d8b8] border-l-4 border-l-primary"
-                    : "hover:bg-[#ede2cc]"
-                }`}
+                    : "hover:bg-[#f2e4c8]"
+                } ${entry.isPlaceholder ? "italic opacity-70" : ""}`}
               >
-                <div className="font-medium text-foreground">{entry.week}</div>
-                <div className="text-sm text-muted-foreground mt-1 truncate">
+                <div className="font-medium text-gray-800">{entry.week}</div>
+                <div className="text-sm text-gray-600 mt-1 truncate">
                   {entry.title}
                 </div>
               </div>
@@ -61,20 +58,25 @@ export const JournalSection = () => {
           </div>
         </div>
 
-        {/* Right Panel - Note Details */}
-        <div className="flex-1 bg-[#fef9e7] overflow-y-auto notes-content relative">
-          <div className="p-8">
-            <div className="font-serif">
-              <h2 className="text-3xl font-bold text-foreground mb-2">
-                {selectedEntry.title}
-              </h2>
-              <div className="text-sm text-muted-foreground mb-6">
+        {/* Right Panel */}
+        <div className="flex-1 bg-[#fef9e7] overflow-y-auto">
+          <div className="p-8 font-serif">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              {selectedEntry.title}
+            </h2>
+            {selectedEntry.date && (
+              <div className="text-sm text-gray-500 mb-6">
                 {selectedEntry.date}
               </div>
-              <p className="text-lg leading-relaxed text-foreground">
-                {selectedEntry.content}
+            )}
+            <p className="text-lg leading-relaxed text-gray-800">
+              {selectedEntry.content}
+            </p>
+            {selectedEntry.isPlaceholder && (
+              <p className="mt-6 text-gray-500 italic">
+                More updates will appear here as we continue building.
               </p>
-            </div>
+            )}
           </div>
         </div>
       </div>

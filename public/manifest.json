@@ -1,0 +1,22 @@
+{
+    "name": "Project Life",
+    "short_name": "ProjectLife",
+    "description": "A portfolio of indie SaaS and digital products by CVillegas — built with AI + code.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0e14",
+    "theme_color": "#0a0e14",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon.ico",
+        "sizes": "32x32 48x48 64x64",
+        "type": "image/x-icon"
+      }
+    ]
+  }

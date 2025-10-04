@@ -2,104 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Mac OS X Lion Inspired Theme */
-    --background: 220 15% 8%; /* dark space background */
-    --foreground: 0 0% 95%; /* light text for dark bg */
-
-    --window-bg: 0 0% 96%; /* light window background */
-    --window-fg: 220 10% 15%; /* dark text in windows */
-    
-    --titlebar: 0 0% 82%; /* window title bar gradient start */
-    --titlebar-end: 0 0% 75%; /* window title bar gradient end */
+    /* Mac OS X Lion inspired Theme */
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+    --window-bg: 0 0% 96%;
+    --window-fg: 220 10% 15%;
+    --titlebar: 0 0% 82%;
+    --titlebar-end: 0 0% 75%;
     --titlebar-text: 220 10% 25%;
-    
-    --menu-bar: 210 10% 22%; /* top menu bar */
+    --menu-bar: 210 10% 22%;
     --menu-bar-text: 0 0% 95%;
-    
-    --dock-bg: 210 15% 18%; /* dock background */
-    
-    --primary: 211 100% 50%; /* Mac blue accent */
+    --dock-bg: 210 15% 18%;
+    --primary: 211 100% 50%;
     --primary-foreground: 0 0% 100%;
-    
     --secondary: 0 0% 85%;
     --secondary-foreground: 220 10% 20%;
-    
-    --accent: 211 80% 55%; /* lighter blue for hover */
+    --accent: 211 80% 55%;
     --accent-foreground: 0 0% 100%;
-    
     --muted: 0 0% 70%;
     --muted-foreground: 220 5% 40%;
-    
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
-    
     --border: 0 0% 65%;
     --window-border: 0 0% 70%;
     --input: 0 0% 88%;
     --ring: 211 100% 50%;
-    
     --card: 0 0% 96%;
     --card-foreground: 220 10% 15%;
-    
     --popover: 0 0% 96%;
     --popover-foreground: 220 10% 15%;
-
     --radius: 0.5rem;
   }
 }
 
-/* Mac-style animations */
 @layer utilities {
   .dock-icon {
     @apply transition-transform duration-200 ease-out;
   }
-  
   .dock-icon:hover {
     @apply scale-125 -translate-y-2;
   }
-  
   .window-shadow {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
   }
-  
   .titlebar-gradient {
     background: linear-gradient(to bottom, hsl(var(--titlebar)), hsl(var(--titlebar-end)));
   }
+  /* Smooth fade on route change */
+  .route-fade {
+    animation: route-fade-in 180ms ease-out;
+    will-change: opacity;
+  }
+}
+
+@keyframes route-fade-in {
+  from { opacity: 0.001; }
+  to { opacity: 1; }
 }
 
 @layer base {
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global space wallpaper */
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    background-color: hsl(var(--background)); /* fallback */
+    color: hsl(var(--foreground));
   }
 }
 
 /* Notes App Styling */
 .notes-sidebar {
-  background-image: 
-    repeating-linear-gradient(
-      transparent,
-      transparent 31px,
-      #d4c4a8 31px,
-      #d4c4a8 32px
-    );
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    #d4c4a8 31px,
+    #d4c4a8 32px
+  );
 }
-
 .notes-content {
-  background-image: 
-    repeating-linear-gradient(
-      transparent,
-      transparent 31px,
-      #f0e4c8 31px,
-      #f0e4c8 32px
-    );
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    #f0e4c8 31px,
+    #f0e4c8 32px
+  );
 }

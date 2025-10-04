@@ -1,14 +1,13 @@
-User-agent: Googlebot
-Allow: /
+# Project Life by CVillegas - robots.txt
 
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Allow all crawlers
 User-agent: *
 Allow: /
+
+# Block sensitive/unnecessary routes
+Disallow: /admin
+Disallow: /api
+Disallow: /_vercel
+
+# Sitemap location
+Sitemap: https://projectlife.xyz/sitemap.xml

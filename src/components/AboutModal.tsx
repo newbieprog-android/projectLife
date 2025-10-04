@@ -4,7 +4,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Rocket } from "lucide-react";
+
+import cvillegas from "../assets/cvillegas.png";
 
 interface AboutModalProps {
   open: boolean;
@@ -14,47 +15,53 @@ interface AboutModalProps {
 export const AboutModal = ({ open, onOpenChange }: AboutModalProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[500px] bg-window-bg border-window-border overflow-hidden [&>button]:hidden">
-        {/* Mac Window Title Bar */}
-        <div className="absolute top-0 left-0 right-0 h-8 titlebar-gradient flex items-center px-3 border-b border-border -mt-6 -mx-6 rounded-t-lg z-10">
-          <div className="flex gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-500 cursor-pointer" onClick={() => onOpenChange(false)} />
-            <div className="w-3 h-3 rounded-full bg-yellow-500" />
-            <div className="w-3 h-3 rounded-full bg-green-500" />
-          </div>
-        </div>
+      <DialogContent
+        // ✅ Keep Radix centering intact, hide default close button, responsive sizing
+        className="w-[95vw] max-w-[500px] bg-window-bg border-window-border overflow-hidden [&>button]:hidden"
+      >
+        {/* macOS Close Dot */}
+        <button
+          onClick={() => onOpenChange(false)}
+          className="absolute top-3 left-3 w-3 h-3 rounded-full bg-red-500 hover:bg-red-600 shadow-sm transition"
+          aria-label="Close"
+        />
 
         {/* Content */}
-        <div className="pt-4 pb-2 text-center">
+        <div className="pt-8 pb-2 text-center">
+          {/* Logo */}
           <div className="flex justify-center mb-4">
-            <div className="w-20 h-20 rounded-xl bg-primary/10 flex items-center justify-center">
-              <Rocket className="w-12 h-12 text-primary" />
-            </div>
+            <img
+              src={cvillegas}
+              alt="CVillegas"
+              className="w-20 h-20 object-cover rounded-xl shadow-md"
+            />
           </div>
-          
+
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-center text-window-fg">
-              Project Life
+              CVillegas
             </DialogTitle>
           </DialogHeader>
-          
-          <p className="text-sm text-muted-foreground mb-4">by CVillegas</p>
-          
+
+          <p className="text-sm text-muted-foreground mb-4">Solo founder</p>
+
           <div className="text-sm leading-relaxed text-window-fg space-y-3 mb-4">
             <p>
-              Project Life is my umbrella brand for indie SaaS and digital products — 
-              each designed to be simple, lovable, and complete. My work spans finance, 
-              productivity, and essentials, with one goal: to help people live smarter 
-              and more intentional lives.
+              Turning raw ideas into products with design, systems, and speed. I
+              use AI with code to shape solutions that feel simple, intentional,
+              and timeless. I believe in building for the future, not just
+              reacting to it. If the biggest companies already say AI will write
+              code, why waste time doubting?
             </p>
             <p>
-              Every project you see here is independently designed, built, and shipped.
+              The real question is how far we can take it, how we can refine it,
+              improve it, and create things that outlast us.
             </p>
+            <p className="text-xs italic text-muted-foreground mt-6">
+            "Code is temporary. Vision is forever."
+                   </p>
+           
           </div>
-          
-          <p className="text-xs italic text-muted-foreground mt-6">
-            "Built for big dreams and late nights."
-          </p>
         </div>
       </DialogContent>
     </Dialog>

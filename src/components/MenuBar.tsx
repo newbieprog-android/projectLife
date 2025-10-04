@@ -29,7 +29,7 @@ export const MenuBar = ({ activeSection, onNavigate }: MenuBarProps) => {
       <div className="fixed top-0 left-0 right-0 h-12 bg-menubar-bg border-b border-border/30 flex items-center px-4 z-50 backdrop-blur-sm">
         <DropdownMenu>
           <DropdownMenuTrigger className="font-semibold text-menubar-text mr-6 hover:bg-white/10 px-2 py-1 rounded transition-colors outline-none">
-            🍎 Project Life
+             Project Life
           </DropdownMenuTrigger>
           <DropdownMenuContent align="start" className="bg-menubar-bg/95 backdrop-blur-sm border-border/30">
             <DropdownMenuItem 

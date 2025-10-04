@@ -3,25 +3,52 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Pages
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+// Layout
+import { Layout } from "./components/Layout";
+
+// Sections
+import { ProjectsSection } from "./components/sections/ProjectsSection";
+import { JournalSection } from "./components/sections/JournalSection";
+import { LegalSection } from "./components/sections/LegalSection";
+import { ContactSection } from "./components/sections/ContactSection";
+
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              {/* Home */}
+              <Route path="/" element={<Index />} />
+
+              {/* Portfolio Sections */}
+              <Route path="/projects" element={<ProjectsSection />} />
+              <Route path="/journal" element={<JournalSection />} />
+              <Route path="/contact" element={<ContactSection />} />
+
+              {/* Legal Pages */}
+              <Route path="/terms" element={<LegalSection type="terms" />} />
+              <Route path="/privacy" element={<LegalSection type="privacy" />} />
+              <Route path="/refunds" element={<LegalSection type="refunds" />} />
+
+              {/* 404 Fallback */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

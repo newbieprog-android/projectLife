@@ -9,10 +9,16 @@ interface MacWindowProps {
 
 export const MacWindow = ({ title, children, className }: MacWindowProps) => {
   return (
-    <div className={cn("window-shadow rounded-lg overflow-hidden bg-window-bg border border-window-border", className)}>
+    <div
+      className={cn(
+        "window-shadow rounded-2xl overflow-hidden backdrop-blur-md bg-white/80 dark:bg-black/70 border border-window-border",
+        className
+      )}
+    >
       {/* Title Bar */}
       <div className="titlebar-gradient h-8 flex items-center px-3 border-b border-border">
         <div className="flex gap-2">
+          {/* macOS dots */}
           <div className="w-3 h-3 rounded-full bg-red-500" />
           <div className="w-3 h-3 rounded-full bg-yellow-500" />
           <div className="w-3 h-3 rounded-full bg-green-500" />
@@ -21,11 +27,9 @@ export const MacWindow = ({ title, children, className }: MacWindowProps) => {
           {title}
         </div>
       </div>
-      
+
       {/* Content */}
-      <div className="p-6 text-window-fg">
-        {children}
-      </div>
+      <div className="p-6 text-window-fg">{children}</div>
     </div>
   );
 };

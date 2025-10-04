@@ -74,8 +74,9 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
   const selectedContent = content[type];
 
   return (
-    <MacWindow title={selectedContent.title} className="max-w-3xl mx-auto">
-      <div className="space-y-6">
+    <div className="px-4 py-8">
+      <MacWindow title={selectedContent.title} className="max-w-3xl mx-auto">
+        <div className="space-y-6">
         <h1 className="text-3xl font-bold mb-6">{selectedContent.title}</h1>
         <p className="text-sm text-muted-foreground mb-8">
           Last updated: {new Date().toLocaleDateString()}
@@ -102,5 +103,6 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         </div>
       </div>
     </MacWindow>
+    </div>
   );
 };
