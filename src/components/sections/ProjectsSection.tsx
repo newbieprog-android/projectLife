@@ -5,16 +5,33 @@ import worthlyIcon from "../../assets/worthly.png";
 import clarityIcon from "../../assets/clarity.png";
 import ecosakayIcon from "../../assets/ecosakay.png";
 import comingSoonIcon from "../../assets/comingsoon.png";
+import timeTag from "../../assets/timetag.png";
 
 export const ProjectsSection = () => {
   const projects = [
-    {
-      icon: worthlyIcon,
-      name: "Worthly",
-      description: "Track your net worth, debts, and savings in one clean dashboard.",
-      status: "🚀 MVP Live",
-      url: "https://your-worthly-way.lovable.app",
-    },
+     {
+          icon: worthlyIcon,
+          name: "Worthly",
+          description: (
+            <>
+              <strong>Know Your Worth.</strong> Your personal net worth tracker built for clarity, simplicity, and ownership. It lets users monitor their assets, debts, and savings all in one clean, minimal dashboard.
+            </>
+          ),
+          status: "🚀 MVP Live",
+          url: "https://your-worthly-way.lovable.app",
+        },  
+        {
+          icon: timeTag,
+          name: "TimeTag",
+          description: (
+            <>
+              <strong>Value your Time.</strong> TimeTag helps you see the real cost of every purchase — in the hours or days you work for it. Make smarter decisions, spend with awareness, and start valuing your time today.
+            </>
+          ),
+          status: "🚀 MVP Live",
+          url: " https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31",
+       
+        },
     {
       icon: clarityIcon,
       name: "Clarity",
@@ -33,7 +50,7 @@ export const ProjectsSection = () => {
       icon: comingSoonIcon,
       name: "Coming Soon...",
       description: "New exciting projects in development. Stay tuned!",
-      isPlaceholder: true,
+      isPlaceholder: false,
     },
    
     
