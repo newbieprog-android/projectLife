@@ -5,7 +5,7 @@ import worthlyIcon from "../../assets/worthly.png";
 import clarityIcon from "../../assets/clarity.png";
 import ecosakayIcon from "../../assets/ecosakay.png";
 import comingSoonIcon from "../../assets/comingsoon.png";
-import timeTag from "../../assets/timetag.png";
+import timeTag from "../../assets/timeTag.png";
 
 export const ProjectsSection = () => {
   const projects = [
