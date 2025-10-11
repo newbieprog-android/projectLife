@@ -56,7 +56,26 @@ export const JournalSection = () => {
     
       #FounderWall #Stripe #LemonSqueezy #Paddle #IndieSaaS #Worthly  `
     } ,
-
+    {
+      id: "timeTag",
+      week: "TimeTag- MVP Live",
+      title: "TimeTag MVP is Live",
+      date: "Oct 9, 2025",
+      content: `
+    Today marks a huge step — TimeTag is officially live.
+    What started as a small idea about seeing money differently has turned into my first real app.
+    
+    I built it to remind myself and others that time is our most valuable currency.
+    Every purchase takes a piece of it, and TimeTag helps you see that clearly.
+    
+    Right now, I’m keeping things simple: the web app is up, the landing page is running, and feedback is slowly coming in.
+    The next step is raising a small amount to cover the Apple Developer fee, so I can deploy the iOS version and bring it to more people.
+    
+    This is just the beginning — and even if it’s a small launch, it feels like a big win.
+    Here’s to building with purpose, one project at a time.
+    
+    Value your time. Always. `
+    } ,
     {
       id: "comingsoon",
       week: "Coming Soon",
