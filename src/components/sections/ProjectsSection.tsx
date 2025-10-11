@@ -18,7 +18,7 @@ export const ProjectsSection = () => {
             </>
           ),
           status: "🚀 MVP Live",
-          url: "https://your-worthly-way.lovable.app",
+          url: "https://worthly.projectlife.xyz/",
         },  
         {
           icon: timeTag,
