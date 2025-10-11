@@ -14,7 +14,7 @@ export const ProjectsSection = () => {
           name: "Worthly",
           description: (
             <>
-              <strong>Know Your Worth.</strong> Your personal net worth tracker built for clarity, simplicity, and ownership. It lets users monitor their assets, debts, and savings all in one clean, minimal dashboard.
+              <strong>Build Your Worth.</strong> Your personal net worth tracker built for clarity, simplicity, and ownership. It lets users monitor their assets, debts, and savings all in one clean, minimal dashboard.
             </>
           ),
           status: "🚀 MVP Live",
