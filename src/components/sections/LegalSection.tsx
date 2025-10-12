@@ -5,6 +5,9 @@ interface LegalSectionProps {
 }
 
 export const LegalSection = ({ type }: LegalSectionProps) => {
+  // ✅ Single date constant — manually editable
+  const LAST_UPDATED = "October 12, 2025";
+
   const content = {
     terms: {
       title: "Terms of Service",
@@ -57,7 +60,7 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         },
         {
           heading: "2. Refund Process",
-          text: "Refund requests are typically processed within 5-7 business days. Refunds will be issued to the original payment method used for purchase.",
+          text: "Refund requests are typically processed within 5–7 business days. Refunds will be issued to the original payment method used for purchase.",
         },
         {
           heading: "3. Non-Refundable Items",
@@ -77,32 +80,35 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
     <div className="px-4 py-8">
       <MacWindow title={selectedContent.title} className="max-w-3xl mx-auto">
         <div className="space-y-6">
-        <h1 className="text-3xl font-bold mb-6">{selectedContent.title}</h1>
-        <p className="text-sm text-muted-foreground mb-8">
-          Last updated: {new Date().toLocaleDateString()}
-        </p>
-        
-        <div className="space-y-6 max-h-96 overflow-y-auto pr-2">
-          {selectedContent.sections.map((section, index) => (
-            <div key={index}>
-              <h2 className="text-lg font-semibold mb-2">{section.heading}</h2>
-              <p className="text-base leading-relaxed text-muted-foreground">
-                {section.text}
-              </p>
-            </div>
-          ))}
-        </div>
-        
-        <div className="mt-8 pt-6 border-t border-border">
-          <p className="text-sm text-muted-foreground">
-            For questions about these terms, please contact us at{" "}
-            <a href="mailto:supp.projectlif3@gmail.com" className="text-primary hover:underline">
-              supp.projectlif3@gmail.com
-            </a>
+          <h1 className="text-3xl font-bold mb-6">{selectedContent.title}</h1>
+          <p className="text-sm text-muted-foreground mb-8">
+            Last updated: <span className="font-medium">{LAST_UPDATED}</span>
           </p>
+
+          <div className="space-y-6 max-h-96 overflow-y-auto pr-2">
+            {selectedContent.sections.map((section, index) => (
+              <div key={index}>
+                <h2 className="text-lg font-semibold mb-2">{section.heading}</h2>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {section.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-border">
+            <p className="text-sm text-muted-foreground">
+              For questions about these terms, please contact us at{" "}
+              <a
+                href="mailto:supp.projectlif3@gmail.com"
+                className="text-primary hover:underline"
+              >
+                supp.projectlif3@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
-    </MacWindow>
+      </MacWindow>
     </div>
   );
 };
