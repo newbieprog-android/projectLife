@@ -77,7 +77,7 @@ export const JournalSection = () => {
     Value your time. Always. `
     } ,
     {id: "Worthly Live",
-      week: "Worhtly - own domain",
+      week: "Worthly - own domain",
       title: "The Night Worthly Went Live",
       date: "Oct 11, 2025",
       content: "  Tonight, something small but significant happened my first app 'Worthly' officially went live on its own domain.After countless tweaks, debugging loops, schema fixes, Supabase setups, and OAuth redirections that led to nowhere, it finally connected, perfectly.I watched the Google sign-in page redirect me not to a blank 404, but to my own dashboard and for the first time, the whole system worked end-to-end. That moment wasn’t just technical. It was emotional. This used to be just another idea among dozens — one of many MVPs built in Lovable, Bolt, or Cursor.  But Worthly is different. It’s the first one to breathe — to work — hosted on its own home.  worthly.projectlife.xyz. Every detail from database triggers to domain routing, taught me something new about patience, precision, and persistence. Even when I didn’t know what I was doing technically, I never stopped learning, And that’s what building as a founder really means: Not knowing everything, but refusing to quit until it works. Next, we’ll move environment secrets, polish the onboarding, integrate Lemon Squeezy or paddle for billing, and bring the whole app into growth mode. But for now — for tonight, it’s enough to look at the live site and whisper,  'We did it'– CVillegas - Project Life"},
