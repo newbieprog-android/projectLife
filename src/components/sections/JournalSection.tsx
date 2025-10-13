@@ -40,7 +40,7 @@ export const JournalSection = () => {
    },
     {
       id: "stripe-wall",
-      week: "Worhtly- Monetization Reality Check",
+      week: "Worthly- Monetization Reality Check",
       title: "Hit the Wall: Learning What They Don't Tell You in Tutorials",
       date: "Oct 8, 2025",
       content: `

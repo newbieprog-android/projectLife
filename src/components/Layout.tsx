@@ -2,7 +2,6 @@ import { ReactNode, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { MenuBar } from "./MenuBar";
 import { Dock } from "./Dock";
-import Footer from "./Footer";
 import spaceBg from "@/assets/space-bg.jpg";
 
 interface LayoutProps {
@@ -73,9 +72,6 @@ export const Layout = ({ children }: LayoutProps) => {
       
       {/* Dock at the bottom center */}
       <Dock onNavigate={handleNavigate} />
-      
-      {/* Footer at the bottom right */}
-      <Footer />
     </div>
   );
 };

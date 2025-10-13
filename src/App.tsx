@@ -17,6 +17,10 @@ import { JournalSection } from "./components/sections/JournalSection";
 import { LegalSection } from "./components/sections/LegalSection";
 import { ContactSection } from "./components/sections/ContactSection";
 
+// Global components
+import Footer from "./components/Footer";
+import { SpotifyWidget } from "./components/SpotifyWidget";
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -45,6 +49,10 @@ const App = () => {
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
+
+          {/* Global Components */}
+          <Footer />
+          <SpotifyWidget />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
