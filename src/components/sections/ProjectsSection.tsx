@@ -10,7 +10,7 @@ import timeTag from "../../assets/timeTag.png";
 import gwisePH from "../../assets/gwiseph.png";
 import Marga from "../../assets/marga.png";
 import findmyproperty from "../../assets/findmyproperty.png";
-import petpal from "../../assets/petpal.png";
+import petpal from "../../assets/Petpal.png";
 import laterly from "../../assets/laterly.png";
 
 export const ProjectsSection = () => {
