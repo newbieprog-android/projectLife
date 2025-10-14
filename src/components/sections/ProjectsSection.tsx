@@ -12,8 +12,8 @@ import Marga from "../../assets/marga.png";
 import findmyproperty from "../../assets/findmyproperty.png";
 import petpal from "../../assets/petpal.png";
 import laterly from "../../assets/laterly.png";
+
 export const ProjectsSection = () => {
-  // current page index (starts at 0)
   const [page, setPage] = useState(0);
   const itemsPerPage = 6;
 
@@ -28,6 +28,7 @@ export const ProjectsSection = () => {
       ),
       status: "🚀 MVP Live",
       url: "https://worthly.projectlife.xyz/",
+      launchDate: "October 2025",
     },
     {
       icon: timeTag,
@@ -39,18 +40,19 @@ export const ProjectsSection = () => {
       ),
       status: "🚀 MVP Live",
       url: "https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31",
+      launchDate: "October 2025",
     },
     {
       icon: Marga,
       name: "Marga",
       description: (
         <>
-          <strong>Make It Personal.</strong> 
-Your custom print and gift studio for meaningful design. Marga lets you create mugs and keepsakes that tell your story — thoughtful, creative, and one-of-a-kind.
+          <strong>Make It Personal.</strong> Your custom print and gift studio for meaningful design. Marga lets you create mugs and keepsakes that tell your story — thoughtful, creative, and one-of-a-kind.
         </>
       ),
       status: "🚀 Shopee Live",
       url: "https://shopee.ph/projectlife",
+      launchDate: "July 2025",
     },
     {
       icon: gwisePH,
@@ -60,65 +62,77 @@ Your custom print and gift studio for meaningful design. Marga lets you create m
           <strong>Learn. Plan. Connect.</strong> Your trusted financial learning hub for clarity and confidence.
         </>
       ),
-      status: "🚧 In Progress",
+      status: "🚧 Under Construction",
+      launchDate: "Soon",
     },
     {
       icon: clarityIcon,
       name: "Clarity",
-      description:  <>
-          <strong>Understand Every Document..</strong> AI summarizer for contracts, policies, and terms — built for transparency.
-        </> ,
+      description: (
+        <>
+          <strong>Understand Every Document.</strong> AI summarizer for contracts, policies, and terms — built for transparency.
+        </>
+      ),
       status: "🚧 Under Construction",
+      launchDate: "Soon ",
     },
     {
       icon: ecosakayIcon,
       name: "ecoSakay",
-      description: <> <strong> Ride Together, Save Together.</strong> Share rides, save money, reduce emissions.
-      </>,
+      description: (
+        <>
+          <strong>Ride Together, Save Together.</strong> Share rides, save money, reduce emissions.
+        </>
+      ),
       status: "🚧 Upcoming",
+      launchDate: "Soon",
     },
-         {
+    {
       icon: findmyproperty,
       name: "Find My Property",
-     
-     description: (
+      description: (
         <>
-          <strong>Find Your Space.</strong> 
-Your smart property discovery app for modern home seekers. Browse verified listings, compare prices, and connect directly with trusted agents — simple, clear, and stress-free.
-        </>  ),
-        status: "🚧 Upcoming",
+          <strong>Find Your Space.</strong> Your smart property discovery app for modern home seekers. Browse verified listings, compare prices, and connect directly with trusted agents — simple, clear, and stress-free.
+        </>
+      ),
+      status: "🚧 Upcoming",
+      launchDate: "Soon",
     },
     {
       icon: petpal,
       name: "Petpal",
       description: (
         <>
-          <strong>Care Made Simple.</strong> 
-Your trusted pet companion app for easy, organized care. Track health records, vet visits, and reminders — everything you need to keep your pets happy and healthy.
-        </>  ),
-        status: "🚧 Upcoming",
+          <strong>Care Made Simple.</strong> Your trusted pet companion app for easy, organized care. Track health records, vet visits, and reminders — everything you need to keep your pets happy and healthy.
+        </>
+      ),
+      status: "🚧 Upcoming",
+      launchDate: "Soon",
     },
     {
       icon: laterly,
       name: "Laterly",
       description: (
         <>
-          <strong>Revisit What Matters.</strong> 
-Your mindful content saver built for reflection and growth. Laterly helps you collect posts, links, and reels to review intentionally — turning daily scrolls into lasting insights.
-        </>   ),
-        status: "🚧 Upcoming",
+          <strong>Revisit What Matters.</strong> Your mindful content saver built for reflection and growth. Laterly helps you collect posts, links, and reels to review intentionally — turning daily scrolls into lasting insights.
+        </>
+      ),
+      status: "🚧 Upcoming",
+      launchDate: "Soon",
     },
     {
-     icon: comingSoonIcon,
+      icon: comingSoonIcon,
       name: "Coming Soon",
       description: (
         <>
-          <strong>Fuel the Build. Stay Caffeinated </strong> More ideas are brewing! Support the grind and help bring the next Project Life app to life. one coffee at a time.
-        </>   ), 
-        url: "https://buymeacoffee.com/projectlif3",
-     },
+          <strong>Fuel the Build. Stay Caffeinated.</strong> More ideas are brewing! Support the grind and help bring the next Project Life app to life — one coffee at a time.
+        </>
+      ),
+      url: "https://buymeacoffee.com/projectlif3",
+      status: "☕ Buy Me a Coffee",
+     
+    },
   ];
-
 
   const totalPages = Math.ceil(projects.length / itemsPerPage);
   const startIndex = page * itemsPerPage;
@@ -126,16 +140,33 @@ Your mindful content saver built for reflection and growth. Laterly helps you co
 
   return (
     <div className="flex flex-col items-center mt-12 mb-20">
-      {/* Mac-style window */}
       <MacWindow title="Applications" className="max-w-6xl w-full shadow-lg border border-border">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
           {currentProjects.map((project, index) => (
             <div
               key={`${project.name}-${index}`}
-              className={`bg-white rounded-2xl p-6 border border-border shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between min-h-[260px] ${
-                project.status?.includes("Construction")|| project.status?.includes("Upcoming")? "opacity-70" : ""
+              className={`relative bg-white rounded-2xl p-6 border border-border shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between min-h-[260px] ${
+                project.status?.includes("Construction") ||
+                project.status?.includes("Upcoming")
+                  ? "opacity-70 blur-[1px] pointer-events-none"
+                  : ""
               }`}
             >
+              {/* Launch Date Badge */}
+              {project.launchDate && (
+                <span
+                  className={`absolute top-20 right-3 rounded-full px-3 py-1 text-xs font-medium border ${
+                    project.status?.includes("Upcoming")
+                      ? "bg-amber-100 text-amber-700 border-amber-300"
+                      : "bg-gray-100 text-gray-700 border-gray-300"
+                  }`}
+                >
+                  {project.status?.includes("Upcoming")|| project.status?.includes("Construction") 
+                    ? `Launching ${project.launchDate}`
+                    : `Since ${project.launchDate}`}
+                </span>
+              )}
+
               {/* Icon + Status */}
               <div className="flex items-start justify-between mb-3">
                 <img
@@ -148,9 +179,10 @@ Your mindful content saver built for reflection and growth. Laterly helps you co
                     className={`text-xs font-medium px-2 py-1 rounded ${
                       project.status.includes("Live")
                         ? "bg-green-100 text-green-800"
-                        : project.status.includes("Construction")|| project.status?.includes("In Progress")
+                        : project.status.includes("Construction") ||
+                          project.status?.includes("In Progress")
                         ? "bg-yellow-100 text-yellow-800"
-                        : project.status.includes("Upcoming")
+                        : project.status.includes("☕ Buy Me a Coffee")
                         ? "bg-blue-100 text-blue-800"
                         : "bg-gray-100 text-gray-800"
                     }`}
@@ -186,27 +218,25 @@ Your mindful content saver built for reflection and growth. Laterly helps you co
 
       {/* Pagination Dots */}
       {totalPages > 1 && (
-        <div className="flex justify-center mt-6 space-x-3">
-          {Array.from({ length: totalPages }).map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setPage(i)}
-              aria-label={`Go to page ${i + 1}`}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                page === i
-                  ? "bg-gray-900 dark:bg-white scale-125 shadow-md"
-                  : "bg-gray-400/60 hover:bg-gray-500/80"
-              }`}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Page Counter */}
-      {totalPages > 1 && (
-        <p className="text-xs text-muted-foreground mt-2">
-          Page {page + 1} of {totalPages}
-        </p>
+        <>
+          <div className="flex justify-center mt-6 space-x-3">
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setPage(i)}
+                aria-label={`Go to page ${i + 1}`}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  page === i
+                    ? "bg-gray-900 dark:bg-white scale-125 shadow-md"
+                    : "bg-gray-400/60 hover:bg-gray-500/80"
+                }`}
+              />
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground mt-2">
+            Page {page + 1} of {totalPages}
+          </p>
+        </>
       )}
     </div>
   );
