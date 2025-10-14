@@ -81,6 +81,33 @@ export const JournalSection = () => {
       title: "The Night Worthly Went Live",
       date: "Oct 11, 2025",
       content: "  Tonight, something small but significant happened my first app 'Worthly' officially went live on its own domain.After countless tweaks, debugging loops, schema fixes, Supabase setups, and OAuth redirections that led to nowhere, it finally connected, perfectly.I watched the Google sign-in page redirect me not to a blank 404, but to my own dashboard and for the first time, the whole system worked end-to-end. That moment wasn’t just technical. It was emotional. This used to be just another idea among dozens — one of many MVPs built in Lovable, Bolt, or Cursor.  But Worthly is different. It’s the first one to breathe — to work — hosted on its own home.  worthly.projectlife.xyz. Every detail from database triggers to domain routing, taught me something new about patience, precision, and persistence. Even when I didn’t know what I was doing technically, I never stopped learning, And that’s what building as a founder really means: Not knowing everything, but refusing to quit until it works. Next, we’ll move environment secrets, polish the onboarding, integrate Lemon Squeezy or paddle for billing, and bring the whole app into growth mode. But for now — for tonight, it’s enough to look at the live site and whisper,  'We did it'– CVillegas - Project Life"},
+      
+      {
+  id: "founder-dilemma-oct13",
+  week: "Foundr thoughts",
+  title: "The Employee to Entrepreneur Dilemma",
+  date: "Oct 13, 2025",
+  content: `I’ve been thinking a lot about direction lately. Between waiting for Worthly’s Lemon Squeezy approval and fine-tuning side projects, I’ve started to question if I’m truly on the right path — or just stubbornly walking in circles because I’ve invested too much to stop.
+
+There’s this silent tug-of-war inside me: the security of being an employee versus the chaos of building something from nothing. One gives structure; the other gives freedom. But lately, freedom feels heavier than structure.
+
+I see people with stable jobs, clear routines, and paychecks that arrive on time — while I’m here debugging, iterating, and wondering if the next line of code will actually matter to anyone. Still, even with that uncertainty, the thought of going back to employment feels like betraying the version of me who dreamed of creating instead of just working.
+
+Maybe that’s what this all is — not a joke, but a test. To see how much I can endure, how much I can build before something finally clicks.
+
+Right now, I’m standing between two worlds: one that pays me to exist, and one that forces me to grow. And every day, I choose growth — even if it means walking alone in the dark for a while.`,
+},
+      {
+  id: "worthly-update-oct14",
+  week: "Worthly - 95%",
+  title: "Worthly Nears 95% Completion and New Creative Experiments",
+  date: "Oct 14, 2025",
+  content: `Today marks a new checkpoint in the build journey — Worthly is now 95% live and currently awaiting Lemon Squeezy approval for payment integration. Once approved, it will complete the final step before public release, making Worthly officially monetizable and compliant.
+
+Meanwhile, I’ve been experimenting with the design of a music player inspired by Windows Media Player, blending it with a Spotify embed for aesthetic balance. Since autoplay restrictions limited full interactivity, I built a static UI simulation — a creative workaround that still carries the nostalgic “machine streaming” vibe.
+
+Lastly, GwisePH is being repurposed from its original concept into a smarter, more dynamic plan — aligning it with the ecosystem under Project Life. It’s a necessary pivot to connect our tools and storytelling in one unified system.`,
+},
     {
       id: "comingsoon",
       week: "Coming Soon",
