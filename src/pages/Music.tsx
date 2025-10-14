@@ -39,25 +39,7 @@ export default function Music() {
         </div>
       </div>
 
-      {/* Playlist Input - fixed bottom right (hidden on small screens) */}
-      <form
-        onSubmit={handleSubmit}
-        className="hidden sm:flex fixed bottom-10 right-6 z-50 items-center gap-2 bg-black/60 border border-green-400/40 rounded-full px-4 py-2 shadow-[0_0_12px_rgba(0,255,80,0.3)] hover:shadow-[0_0_20px_rgba(0,255,80,0.5)] backdrop-blur-sm transition-all"
-      >
-        <input
-          type="text"
-          placeholder="Enter Spotify embed URL..."
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          className="bg-transparent text-green-200 text-xs sm:text-sm w-[220px] outline-none"
-        />
-        <button
-          type="submit"
-          className="bg-green-500 hover:bg-green-400 text-black rounded-full px-3 py-1 text-sm font-bold transition"
-        >
-          ✓
-        </button>
-      </form>
+     
 
       {/* Breathing Glow Animation */}
       <style>
