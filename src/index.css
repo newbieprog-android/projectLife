@@ -55,6 +55,27 @@
     animation: route-fade-in 180ms ease-out;
     will-change: opacity;
   }
+  .neon-glow {
+    border-radius: inherit;
+    box-shadow:
+      0 0 60px rgba(56, 255, 135, 0.35),
+      0 0 140px rgba(56, 255, 135, 0.15);
+    animation: neon-pulse 2s ease-in-out infinite;
+  }
+  .hover-wobble {
+    transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .group:hover .hover-wobble {
+    transform: rotate(-1.6deg) scale(1.02);
+  }
+  .speaker-pulse {
+    animation: speaker-pulse 2.6s ease-in-out infinite;
+  }
+  .neon-text {
+    text-shadow:
+      0 0 12px rgba(74, 222, 128, 0.7),
+      0 0 32px rgba(74, 222, 128, 0.45);
+  }
 }
 
 @layer components {
@@ -87,6 +108,32 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes neon-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    box-shadow:
+      0 0 40px rgba(56, 255, 135, 0.3),
+      0 0 110px rgba(56, 255, 135, 0.18);
+  }
+  50% {
+    opacity: 1;
+    box-shadow:
+      0 0 80px rgba(56, 255, 135, 0.55),
+      0 0 150px rgba(56, 255, 135, 0.35);
+  }
+}
+
+@keyframes speaker-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 40px rgba(56, 255, 135, 0.25);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 65px rgba(56, 255, 135, 0.38);
   }
 }
 

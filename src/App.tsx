@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
+
 // Pages
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -19,7 +21,7 @@ import { ContactSection } from "./components/sections/ContactSection";
 
 // Global components
 import Footer from "./components/Footer";
-import { SpotifyWidget } from "./components/SpotifyWidget";
+import Music from "./pages/Music";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,7 @@ const App = () => {
               {/* Portfolio Sections */}
               <Route path="/projects" element={<ProjectsSection />} />
               <Route path="/journal" element={<JournalSection />} />
+              <Route path="/music" element={<Music />} />
               <Route path="/contact" element={<ContactSection />} />
 
               {/* Legal Pages */}
@@ -52,7 +55,6 @@ const App = () => {
 
           {/* Global Components */}
           <Footer />
-          <SpotifyWidget />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

@@ -1,21 +1,26 @@
+import { useNavigate } from "react-router-dom";
 import homeIcon from "../assets/home.png";
 import projectsIcon from "../assets/folder.png";
 import journalIcon from "../assets/journal.png";
 import termsIcon from "../assets/terms.png";
 import contactIcon from "../assets/mail.png";
-
+import musicIcon from "../assets/Spotify.png";
 interface DockProps {
   onNavigate: (section: string) => void;
 }
 
 export const Dock = ({ onNavigate }: DockProps) => {
+  const navigate = useNavigate();
+  
   const dockItems = [
     { id: "home", icon: homeIcon, label: "Home" },
     { id: "projects", icon: projectsIcon, label: "Projects" },
     { id: "journal", icon: journalIcon, label: "Journal" },
+    { id: "music", icon: musicIcon, label: "Music", isRoute: true },
     { id: "terms", icon: termsIcon, label: "Terms" },
     { id: "contact", icon: contactIcon, label: "Contact" },
   ];
+
 
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
@@ -24,7 +29,7 @@ export const Dock = ({ onNavigate }: DockProps) => {
           {dockItems.map((item) => (
             <button
               key={item.id}
-              onClick={() => onNavigate(item.id)}
+              onClick={() => item.isRoute ? navigate(`/${item.id}`) : onNavigate(item.id)}
               className="dock-icon group relative"
               aria-label={item.label}
             >
