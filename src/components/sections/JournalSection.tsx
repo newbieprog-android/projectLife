@@ -54,7 +54,7 @@ export const JournalSection = () => {
     },
     {
       id: "founder-dilemma-oct13",
-      week: "Founder Thoughts",
+      week: "Founder Thoughts- Dilemna",
       title: "The Employee to Entrepreneur Dilemma",
       date: "Oct 13, 2025",
       content: `I’ve been thinking a lot about direction lately.  
@@ -74,8 +74,8 @@ export const JournalSection = () => {
     },
     {
       id: "founder-update-nov7",
-      week: "The Return to the System",
-      title: "Worthly Nears 95% Completion and New Creative Experiments",
+      week: "Founder Thoughts- Recalibration",
+      title: "The Return to the System",
       date: "Nov 07, 2025",
       content: `It’s strange how going back to work feels both grounding and haunting at the same time.
 There’s comfort in structure again — the familiar hum of tasks, the steady rhythm of deadlines, the illusion of control. But behind that rhythm, there’s an echo reminding me that this isn’t where I planned to stay.
