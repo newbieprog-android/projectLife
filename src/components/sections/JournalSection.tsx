@@ -77,27 +77,23 @@ export const JournalSection = () => {
       week: "The Return to the System",
       title: "Worthly Nears 95% Completion and New Creative Experiments",
       date: "Nov 07, 2025",
-      content: `Overview  
+      content: `It’s strange how going back to work feels both grounding and haunting at the same time.
+There’s comfort in structure again — the familiar hum of tasks, the steady rhythm of deadlines, the illusion of control. But behind that rhythm, there’s an echo reminding me that this isn’t where I planned to stay.
 
-      Today marks a new phase — not just for Worthly, but for me as a founder. After months of pure indie building, I’ve reentered the corporate world.  
-      It feels strange — structured, layered, and at times rigid — but that’s exactly what I came to understand.  
+I used to think employment and entrepreneurship were opposites.
+Now I see they’re just different rooms in the same building — and I’m learning the blueprint from the inside.
 
-      Inside these walls, I’m seeing what I’ve been missing as a solo founder: clear hierarchies, process flows, financial pipelines, feedback loops, and most importantly — how systems sustain themselves without constant chaos. It’s discipline disguised as routine.  
-      ⸻
-      Current Progress
-      • Worthly is now 95% live, pending Paddle integration for payments and compliance.
-      • The portfolio (Project Life) now acts as both a sandbox and a study.  
-      ⸻
-      Insights from the Inside
-      Being in corporate again doesn’t feel like defeat anymore — it feels like a field study. Every task, every meeting, every automation reminds me that what separates a project from a company is structure:
-      • Defined roles, not blurred responsibilities.
-      • A feedback system that outlives enthusiasm.
-      • A clear financial model that keeps momentum stable.
-      • Documentation that replaces memory.  
-      ⸻
-      Takeaway
-      I’m learning how to create a business that functions even when I’m not coding it. This isn’t a pause — it’s alignment.  
-      ⸻
+Maybe this isn’t a step back. Maybe this is fieldwork.
+A temporary recalibration before the next build.
+
+Paddle is already verified and in process of integration. The portfolio’s still growing, project by project. The fire’s still there — quieter now, but more precise.
+I’m not quitting; I’m studying the system I’ll one day replicate and innovate. 
+
+Employment doesn’t erase the vision. It funds it.
+And while others see a return to normal, I see a chance to rebuild stronger — with patience, clarity, and leverage.
+
+Every builder eventually walks back into the system, not to belong, but to understand how to break free from it for good.
+
       Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
     },
   ];
