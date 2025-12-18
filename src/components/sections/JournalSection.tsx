@@ -96,6 +96,47 @@ Every builder eventually walks back into the system, not to belong, but to under
 
       Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
     },
+     {
+      id: "founder-update-nov27",
+      week: "Founder Thoughts- Recalibration",
+      title: "The Return to the System",
+      date: "Nov 07, 2025",
+      content: `It’s strange how going back to work feels both grounding and haunting at the same time.
+There’s comfort in structure again — the familiar hum of tasks, the steady rhythm of deadlines, the illusion of control. But behind that rhythm, there’s an echo reminding me that this isn’t where I planned to stay.
+
+I used to think employment and entrepreneurship were opposites.
+Now I see they’re just different rooms in the same building — and I’m learning the blueprint from the inside.
+
+Maybe this isn’t a step back. Maybe this is fieldwork.
+A temporary recalibration before the next build.
+
+Paddle is already verified and in process of integration. The portfolio’s still growing, project by project. The fire’s still there — quieter now, but more precise.
+I’m not quitting; I’m studying the system I’ll one day replicate and innovate. 
+
+Employment doesn’t erase the vision. It funds it.
+And while others see a return to normal, I see a chance to rebuild stronger — with patience, clarity, and leverage.
+
+Every builder eventually walks back into the system, not to belong, but to understand how to break free from it for good.
+
+      Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
+    },
+     {
+      id: "founder-update-dec18",
+      week: "Founder Thoughts- Pause",
+      title: "Momentum paused, discipline intact.",
+      date: "Dec 18, 2025",
+      content: `Right now, I feel the gap between what I want to build and what I’m able to execute. I miss iterating, shipping, and seeing progress move forward. That frustration is real.
+
+The slowdown isn’t because I stopped believing in my projects. It’s because life demanded priority — emergency repairs, personal obiligations avoid bigger penalties, payments, and things that couldn’t be postponed. Money had to go to stability before creation.
+
+Despite that, I didn’t collapse. I kept reading, learning, and training my body. I worked out consistently 3–4 times a week. I stayed mentally engaged. I protected my health and my thinking even when I couldn’t protect my momentum.
+
+Building is still on my mind. The path is clear: stabilizing first, then build later. I’m not abandoning the builder in me — I’m waiting for the right moment to move again with intent instead of desperation.
+
+This isn’t the end of a chapter. It’s a pause with awareness. When resources open up, I won’t need to find motivation — I’ll just resume. Happy Holidays everyone.
+
+      Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
+    },
   ];
 
   const [selectedEntry, setSelectedEntry] = useState<JournalEntry>(entries[0]);
