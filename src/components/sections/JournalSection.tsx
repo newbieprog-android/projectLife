@@ -127,7 +127,7 @@ Every builder eventually walks back into the system, not to belong, but to under
       date: "Dec 18, 2025",
       content: `Right now, I feel the gap between what I want to build and what I’m able to execute. I miss iterating, shipping, and seeing progress move forward. That frustration is real.
 
-The slowdown isn’t because I stopped believing in my projects. It’s because life demanded priority — emergency repairs, personal obiligations avoid bigger penalties, payments, and things that couldn’t be postponed. Money had to go to stability before creation.
+The slowdown isn’t because I stopped believing in my projects. It’s because life demanded priority — emergency repairs, personal obiligations to avoid bigger penalties, payments, and things that couldn’t be postponed. Money had to go to stability before creation.
 
 Despite that, I didn’t collapse. I kept reading, learning, and training my body. I worked out consistently 3–4 times a week. I stayed mentally engaged. I protected my health and my thinking even when I couldn’t protect my momentum.
 
@@ -137,6 +137,62 @@ This isn’t the end of a chapter. It’s a pause with awareness. When resources
 
       Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
     },
+    {
+      id: "founder-update-May09",
+      week: "Founder Thoughts- I'm Back",
+      title: "The Quiet Progress Nobody Sees",
+      date: "May 09, 2026",
+      content: `For a while, I thought going back into employment meant I was drifting away from entrepreneurship.
+I kept looking at the unfinished plans, the unused subscriptions, the slower pace, and convinced myself I was losing momentum.
+
+But this week proved something important.
+
+Even after long shifts, mental exhaustion, and adapting back into structured work, I still managed to finish an app.
+
+TimeTag is now fully usable.
+
+It’s not published yet. The Google Play release still needs final deployment, and the App Store version will come after I save enough for the Apple Developer fee. But the important part is this:
+
+It exists.
+It works.
+I built it.
+
+That realization changed the way I see this entire season of life.
+
+Maybe progress doesn’t always look loud.
+Maybe some seasons are not about explosive growth, but sustainable building. Quiet iterations. Slow consistency. Learning how to carry responsibility while still protecting the dream.
+
+For the longest time, I thought entrepreneurship required escaping employment immediately.
+Now I’m starting to understand something different:
+
+A job can also become infrastructure.
+
+Infrastructure for stability.
+Infrastructure for runway.
+Infrastructure for learning systems, structure, communication, and operations from the inside.
+
+And strangely enough, returning to corporate made me appreciate what startups actually need to survive:
+not just ideas, but systems.
+
+Not just passion, but sustainability.
+
+TimeTag becoming usable while I’m employed proved that I haven’t stopped building.
+I’ve simply entered a different phase of building.
+
+Less chaotic.
+Less impulsive.
+More intentional.
+
+I’m no longer trying to prove that I can start things.
+
+Now I’m learning how to finish them consistently, even when life gets heavier.
+
+Maybe that’s what real founders eventually become:
+people who keep building, regardless of the season they’re in.
+
+#FounderThoughts #TimeTag #ProjectLife #BuilderMindset #IndieFounder #StartupJourney`,
+    },
+
   ];
 
   const [selectedEntry, setSelectedEntry] = useState<JournalEntry>(entries[0]);
