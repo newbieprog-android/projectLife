@@ -6,7 +6,7 @@ interface LegalSectionProps {
 
 export const LegalSection = ({ type }: LegalSectionProps) => {
   // ✅ Single date constant — manually editable
-  const LAST_UPDATED = "October 12, 2025";
+  const LAST_UPDATED = "May 15, 2026";
 
   const content = {
     terms: {
@@ -48,6 +48,31 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         {
           heading: "4. Third-Party Services",
           text: "Our services may integrate with third-party payment processors (Paddle, Lemon Squeezy) and other services. Please review their privacy policies as well.",
+        },
+        {
+          heading: "5. Mobile Applications",
+          text: "Our mobile applications (including TimeTag, 
+POcus, Worthly, and future Project Life apps) 
+store data locally on your device by default. 
+We do not collect, transmit, or store personal 
+financial or productivity data on external servers 
+unless explicitly stated within the specific app.""
+        },
+        {
+          heading: "6. External Links",
+          text: "Some of our apps contain links to external 
+services including but not limited to 
+buymeacoffee.com for voluntary developer support. 
+These external services have their own privacy 
+policies which govern their data practices.",
+  },
+        {
+          heading: "7. Third-Party Services",
+          text: "Depending on the specific app or service:
+- Supabase (Worthly) — database and authentication
+- Paddle (Worthly web) — payment processing
+- Buy Me a Coffee — voluntary tips
+- Google Play — app distribution",
         },
       ],
     },
