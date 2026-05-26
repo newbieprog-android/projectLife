@@ -192,6 +192,64 @@ people who keep building, regardless of the season they’re in.
 
 #FounderThoughts #TimeTag #ProjectLife #BuilderMindset #IndieFounder #StartupJourney`,
     },
+    {
+      id: "shipping-season-may26",
+      week: "Shipping Season",
+      title: "Shipping Season",
+      date: "May 26, 2026",
+      content: `There's a different feeling when something moves from "building" to "waiting."
+
+Today, TimeTag officially entered review on Google Play.
+
+After weeks of refining, testing, iterating, and trying to make the experience simple enough to matter, it's now sitting in the hands of the system, waiting for approval. The estimated review window is around 14 days.
+
+Fingers crossed.
+
+It's strange how much emotion can exist in a submit button. Relief, excitement, anxiety, doubt, hope, all mixed together. Part of me keeps refreshing mentally, wondering if something was missed, if policies will suddenly block the release, or if this tiny idea about valuing time differently will finally reach real people.
+
+But regardless of the outcome, something important already happened:
+
+I finished it.
+
+TimeTag is no longer just an idea sitting in my notes.
+It became a real product.
+
+At the same time, Worthly quietly crossed another major milestone.
+
+The mobile and web versions are now fully done and usable. The web app is integrated, functional, and operating as intended. What started as an experiment in personal finance slowly evolved into something real, a product that reflects clarity, ownership, and financial awareness.
+
+Now comes the less glamorous phase of building:
+
+Publishing.
+Compliance.
+Distribution.
+Patience.
+
+I'm starting to understand that startups aren't built only during the exciting moments of creation. Sometimes, building means waiting. Waiting for approvals. Waiting for users. Waiting for feedback. Waiting while continuing to improve anyway.
+
+For the first time, I feel like I'm slowly stepping into a new stage.
+
+Not just someone who starts projects.
+
+Someone who ships them.
+
+Maybe this season isn't about dreaming bigger.
+
+Maybe it's about learning how to finish.
+
+⸻
+
+Current Status
+• TimeTag → Submitted to Google Play, awaiting review (~14 days)
+• Worthly Web → Fully usable and integrated
+• Worthly Mobile → Completed and preparing for publishing
+• Founder Mindset → Learning patience, systems, and sustainable execution
+
+⸻
+
+#FounderJournal #TimeTag #Worthly #ShippingSeason #IndieFounder #ProjectLife #BuildInPublic #StartupJourney`,
+    },
+  
 
   ];
 

@@ -51,28 +51,15 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         },
         {
           heading: "5. Mobile Applications",
-          text: "Our mobile applications (including TimeTag, 
-POcus, Worthly, and future Project Life apps) 
-store data locally on your device by default. 
-We do not collect, transmit, or store personal 
-financial or productivity data on external servers 
-unless explicitly stated within the specific app.""
+          text: "Our mobile applications (including TimeTag, POcus, Worthly, and future Project Life apps) store data locally on your device by default. We do not collect, transmit, or store personal financial or productivity data on external servers unless explicitly stated within the specific app.",
         },
         {
           heading: "6. External Links",
-          text: "Some of our apps contain links to external 
-services including but not limited to 
-buymeacoffee.com for voluntary developer support. 
-These external services have their own privacy 
-policies which govern their data practices.",
-  },
+          text: "Some of our apps contain links to external services including but not limited to buymeacoffee.com for voluntary developer support. These external services have their own privacy policies which govern their data practices. We encourage you to review the privacy policies of any third-party services you interact with through our apps.",
+        },
         {
           heading: "7. Third-Party Services",
-          text: "Depending on the specific app or service:
-- Supabase (Worthly) — database and authentication
-- Paddle (Worthly web) — payment processing
-- Buy Me a Coffee — voluntary tips
-- Google Play — app distribution",
+          text: "Depending on the specific app or service: Supabase (Worthly) — database and authentication; Paddle (Worthly web) — payment processing; Buy Me a Coffee — voluntary tips; Google Play — app distribution.",
         },
       ],
     },
@@ -125,10 +112,10 @@ policies which govern their data practices.",
             <p className="text-sm text-muted-foreground">
               For questions about these terms, please contact us at{" "}
               <a
-                href="mailto:supp.projectlif3@gmail.com"
+                href="mailto:projectlifebycv@gmail.com"
                 className="text-primary hover:underline"
               >
-                supp.projectlif3@gmail.com
+                projectlifebycv@gmail.com
               </a>
             </p>
           </div>
