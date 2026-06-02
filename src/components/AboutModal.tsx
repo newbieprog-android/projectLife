@@ -47,20 +47,11 @@ export const AboutModal = ({ open, onOpenChange }: AboutModalProps) => {
 
           <div className="text-sm leading-relaxed text-window-fg space-y-3 mb-4">
             <p>
-              Turning raw ideas into products with design, systems, and speed. I
-              use AI with code to shape solutions that feel simple, intentional,
-              and timeless. I believe in building for the future, not just
-              reacting to it. If the biggest companies already say AI will write
-              code, why waste time doubting?
-            </p>
-            <p>
-              The real question is how far we can take it, how we can refine it,
-              improve it, and create things that outlast us.
+              Turning raw ideas into products with design, systems, and speed. I use AI alongside code to build solutions that feel simple, intentional, and timeless. I build for the future, not in reaction to it — the real question isn't whether AI will write code, it's how far we can take it: how we refine it, improve it, and create things that outlast us.
             </p>
             <p className="text-xs italic text-muted-foreground mt-6">
             "Code is temporary. Vision is forever."
-                   </p>
-           
+            </p>
           </div>
         </div>
       </DialogContent>

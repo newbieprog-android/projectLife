@@ -25,7 +25,7 @@ export const HomeSection = () => {
         
         <div className="prose prose-sm max-w-none">
           <p className="text-base leading-relaxed">
-          Project Life is my umbrella brand for indie SaaS and digital products, each designed to be simple, lovable, and complete. My work spans finance, productivity, and essentials, with one goal: to help people live smarter and more intentional lives. Every project you see here is independently designed, built, and shipped.
+          Project Life is my umbrella brand for indie apps and digital products — each built to be simple, lovable, and complete. My apps help with the everyday: your money, your time, your focus, and the things you'd rather not forget. One goal across all of them — to help people live smarter, more intentional lives. Every product here is independently designed, built, and shipped.
           </p>
           
           <p className="text-xs italic text-muted-foreground mt-6">

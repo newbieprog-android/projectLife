@@ -3,15 +3,8 @@ import { MacWindow } from "../MacWindow";
 
 // Import icons
 import worthlyIcon from "../../assets/worthly.png";
-import clarityIcon from "../../assets/clarity.png";
-import ecosakayIcon from "../../assets/ecosakay.png";
 import comingSoonIcon from "../../assets/comingsoon.png";
-import timeTag from "../../assets/timeTag.png";
-import gwisePH from "../../assets/gwiseph.png";
-import Marga from "../../assets/marga.png";
-import findmyproperty from "../../assets/findmyproperty.png";
-import petpal from "../../assets/Petpal.png";
-import laterly from "../../assets/laterly.png";
+import timeTag from "../../assets/timetag.png";
 
 export const ProjectsSection = () => {
   const [page, setPage] = useState(0);
@@ -19,105 +12,48 @@ export const ProjectsSection = () => {
 
   const projects = [
     {
+      icon: timeTag,
+      name: "TimeTag",
+      description: <>Your time is the price. Now you'll know if it's worth it.</>,
+      status: "🚀 Now Live",
+      note: "First shipped under Project Life.",
+      url: "https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31",
+      launchDate: "October 2025",
+    },
+    {
       icon: worthlyIcon,
       name: "Worthly",
-      description: (
-        <>
-          <strong>Build Your Worth.</strong> Your personal net worth tracker built for clarity, simplicity, and ownership. Monitor your assets, debts, and savings all in one clean dashboard.
-        </>
-      ),
+      description: <>One number. Your entire financial life.</>,
       status: "🚀 MVP Live",
       url: "https://worthly.projectlife.xyz/",
       launchDate: "October 2025",
     },
     {
-      icon: timeTag,
-      name: "TimeTag",
-      description: (
-        <>
-          <strong>Value your Time.</strong> See the real cost of every purchase in hours you worked for it. Spend smarter, live freer.
-        </>
-      ),
-      status: "🚀 MVP Live",
-      url: "https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31",
-      launchDate: "October 2025",
-    },
-    {
-      icon: Marga,
-      name: "Marga",
-      description: (
-        <>
-          <strong>Make It Personal.</strong> Your custom print and gift studio for meaningful design. Marga lets you create mugs and keepsakes that tell your story — thoughtful, creative, and one-of-a-kind.
-        </>
-      ),
-      status: "🚀 Shopee Live",
-      url: "https://shopee.ph/projectlife",
-      launchDate: "July 2025",
-    },
-    {
-      icon: gwisePH,
-      name: "GwisePH",
-      description: (
-        <>
-          <strong>Learn. Plan. Connect.</strong> Your trusted financial learning hub for clarity and confidence.
-        </>
-      ),
-      status: "🚧 Under Construction",
+      icon: comingSoonIcon,
+      name: "Liflow",
+      description: <>Everything maintained. Nothing forgotten.</>,
+      status: "🚧 Coming Soon",
       launchDate: "Soon",
     },
     {
-      icon: clarityIcon,
-      name: "Clarity",
-      description: (
-        <>
-          <strong>Understand Every Document.</strong> AI summarizer for contracts, policies, and terms — built for transparency.
-        </>
-      ),
-      status: "🚧 Under Construction",
-      launchDate: "Soon ",
-    },
-    {
-      icon: ecosakayIcon,
-      name: "ecoSakay",
-      description: (
-        <>
-          <strong>Ride Together, Save Together.</strong> Share rides, save money, reduce emissions.
-        </>
-      ),
-      status: "🚧 Upcoming",
+      icon: comingSoonIcon,
+      name: "POcus",
+      description: <>One goal. Total focus. No excuses.</>,
+      status: "🚧 Coming Soon",
       launchDate: "Soon",
     },
     {
-      icon: findmyproperty,
-      name: "Find My Property",
-      description: (
-        <>
-          <strong>Find Your Space.</strong> Your smart property discovery app for modern home seekers. Browse verified listings, compare prices, and connect directly with trusted agents — simple, clear, and stress-free.
-        </>
-      ),
-      status: "🚧 Upcoming",
+      icon: comingSoonIcon,
+      name: "Vently",
+      description: <>Finally, someone who just listens.</>,
+      status: "🚧 Coming Soon",
       launchDate: "Soon",
     },
     {
-      icon: petpal,
-      name: "Petpal",
-      description: (
-        <>
-          <strong>Care Made Simple.</strong> Your trusted pet companion app for easy, organized care. Track health records, vet visits, and reminders — everything you need to keep your pets happy and healthy.
-        </>
-      ),
-      status: "🚧 Upcoming",
-      launchDate: "Soon",
-    },
-    {
-      icon: laterly,
-      name: "Laterly",
-      description: (
-        <>
-          <strong>Revisit What Matters.</strong> Your mindful content saver built for reflection and growth. Laterly helps you collect posts, links, and reels to review intentionally — turning daily scrolls into lasting insights.
-        </>
-      ),
-      status: "🚧 Upcoming",
+      icon: comingSoonIcon,
+      name: "Wishly",
+      description: <>The right gift, every time.</>,
+      status: "🚧 Coming Soon",
       launchDate: "Soon",
     },
     {
@@ -130,7 +66,6 @@ export const ProjectsSection = () => {
       ),
       url: "https://buymeacoffee.com/projectlif3",
       status: "☕ Buy Me a Coffee",
-     
     },
   ];
 
@@ -147,7 +82,7 @@ export const ProjectsSection = () => {
               key={`${project.name}-${index}`}
               className={`relative bg-white rounded-2xl p-6 border border-border shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between min-h-[260px] ${
                 project.status?.includes("Construction") ||
-                project.status?.includes("Upcoming")
+                project.status?.includes("Coming Soon")
                   ? "opacity-70 blur-[1px] pointer-events-none"
                   : ""
               }`}
@@ -156,12 +91,12 @@ export const ProjectsSection = () => {
               {project.launchDate && (
                 <span
                   className={`absolute top-20 right-3 rounded-full px-3 py-1 text-xs font-medium border ${
-                    project.status?.includes("Upcoming")
+                    project.status?.includes("Coming Soon")
                       ? "bg-amber-100 text-amber-700 border-amber-300"
                       : "bg-gray-100 text-gray-700 border-gray-300"
                   }`}
                 >
-                  {project.status?.includes("Upcoming")|| project.status?.includes("Construction") 
+                  {project.status?.includes("Coming Soon") || project.status?.includes("Construction")
                     ? `Launching ${project.launchDate}`
                     : `Since ${project.launchDate}`}
                 </span>
@@ -210,6 +145,11 @@ export const ProjectsSection = () => {
                 >
                   Visit →
                 </a>
+              )}
+
+              {/* First-shipped note */}
+              {project.note && (
+                <p className="mt-2 text-xs italic text-muted-foreground">{project.note}</p>
               )}
             </div>
           ))}
