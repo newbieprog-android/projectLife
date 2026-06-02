@@ -4,7 +4,6 @@ import { MacWindow } from "../MacWindow";
 // Import icons
 import worthlyIcon from "../../assets/worthly.png";
 import comingSoonIcon from "../../assets/comingsoon.png";
-import timeTag from "../../assets/timetag.png";
 
 export const ProjectsSection = () => {
   const [page, setPage] = useState(0);
@@ -12,7 +11,7 @@ export const ProjectsSection = () => {
 
   const projects = [
     {
-      icon: timeTag,
+      icon: comingSoonIcon,
       name: "TimeTag",
       description: <>Your time is the price. Now you'll know if it's worth it.</>,
       status: "🚀 Now Live",
