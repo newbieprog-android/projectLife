@@ -249,7 +249,81 @@ Current Status
 
 #FounderJournal #TimeTag #Worthly #ShippingSeason #IndieFounder #ProjectLife #BuildInPublic #StartupJourney`,
     },
-  
+    {
+      id: "founder-journal-june2026",
+      week: "Founder Journal",
+      title: "Founder Journal",
+      date: "June 2026",
+      content: `Today I feel exhausted.
+Not because of one problem, but because of the accumulation of walls that keep appearing every time I move forward.
+I built five apps.
+I thought shipping the apps would be the hard part.
+Instead, distribution became the challenge.
+TimeTag hit a wall.
+Google Play requirements hit a wall.
+The organization account process is another unknown.
+The D-U-N-S number is another unknown.
+Claude expired.
+Monetization feels further away than I expected.
+Every time I solve one problem, another appears.
+Sometimes it feels like I'm running a marathon where the finish line keeps moving.
+I keep asking myself:
+"When does it get easier?"
+"When does the breakthrough come?"
+"When do I finally experience a win?"
+What frustrates me the most is that I've done the work.
+I've sacrificed sleep.
+I've spent countless nights building.
+I've pushed through self-doubt.
+I've continued even when I didn't know what I was doing.
+And yet the rewards still feel distant.
+But when I zoom out, I see something important.
+One year ago, I was mostly ideas.
+Today, I have products.
+One year ago, I talked about becoming a founder.
+Today, I live like one.
+One year ago, I was waiting for permission.
+Today, I'm building regardless of whether permission exists.
+The victories haven't arrived yet.
+But the evidence is there.
+The apps exist.
+The skills exist.
+The discipline exists.
+The vision exists.
+The work exists.
+Maybe this stage isn't about winning yet.
+Maybe this stage is about proving that I can survive long enough to win.
+Because every founder story sounds exciting after success arrives.
+Nobody talks about the months where it feels like nothing works.
+Nobody talks about the walls.
+Nobody talks about the waiting.
+Nobody talks about building without validation.
+Yet this is where most people quit.
+And I refuse to quit.
+I remind myself why I started.
+I want freedom.
+I want ownership.
+I want to create things that help people.
+I want to build a future where my income is not tied to a timecard.
+I want to prove to myself that I can turn ideas into reality.
+Most importantly, I want to end the cycle.
+The poverty ends with me.
+So today I accept that the road is longer than I expected.
+I accept that the walls will continue to appear.
+I accept that success is taking longer than I want.
+But I also accept that I am further ahead than I was yesterday.
+My job is not to control the breakthrough.
+My job is to keep showing up.
+One app.
+One feature.
+One user.
+One lesson.
+One day at a time.
+I am not done.
+And I still believe my victory is coming.
+
+— Christopher`,
+    },
 
   ];
 
