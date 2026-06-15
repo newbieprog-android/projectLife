@@ -253,7 +253,7 @@ Current Status
       id: "founder-journal-june2026",
       week: "Founder Journal",
       title: "Founder Journal",
-      date: "June 2026",
+      date: "June 15, 2026",
       content: `Today I feel exhausted.
 Not because of one problem, but because of the accumulation of walls that keep appearing every time I move forward.
 I built five apps.
@@ -307,7 +307,7 @@ I want to create things that help people.
 I want to build a future where my income is not tied to a timecard.
 I want to prove to myself that I can turn ideas into reality.
 Most importantly, I want to end the cycle.
-The poverty ends with me.
+The restriction ends with me.
 So today I accept that the road is longer than I expected.
 I accept that the walls will continue to appear.
 I accept that success is taking longer than I want.
@@ -322,7 +322,8 @@ One day at a time.
 I am not done.
 And I still believe my victory is coming.
 
-— Christopher`,
+— CV
+#FounderJournal #RoadTo33 #StillBuilding #TheLongGame #FromIdeasToApps #TheRestrictionEndsWithMe 🚀`,
     },
 
   ];
