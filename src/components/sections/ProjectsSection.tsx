@@ -3,6 +3,7 @@ import { MacWindow } from "../MacWindow";
 
 // Import icons
 import worthlyIcon from "../../assets/worthly.png";
+import timePurseIcon from "../../assets/timetag.png";
 import comingSoonIcon from "../../assets/comingsoon.png";
 
 export const ProjectsSection = () => {
@@ -11,8 +12,8 @@ export const ProjectsSection = () => {
 
   const projects = [
     {
-      icon: comingSoonIcon,
-      name: "TimeTag",
+      icon: timePurseIcon,
+      name: "TimePurse",
       description: <>Your time is the price. Now you'll know if it's worth it.</>,
       status: "🚀 Now Live",
       note: "First shipped under Project Life.",
@@ -23,9 +24,7 @@ export const ProjectsSection = () => {
       icon: worthlyIcon,
       name: "Worthly",
       description: <>One number. Your entire financial life.</>,
-      status: "🚀 MVP Live",
-      url: "https://worthly.projectlife.xyz/",
-      launchDate: "October 2025",
+      status: "🚧 Coming Soon",
     },
     {
       icon: comingSoonIcon,

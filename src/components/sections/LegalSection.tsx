@@ -51,7 +51,7 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         },
         {
           heading: "5. Mobile Applications",
-          text: "Our mobile applications (including TimeTag, POcus, Worthly, and future Project Life apps) store data locally on your device by default. We do not collect, transmit, or store personal financial or productivity data on external servers unless explicitly stated within the specific app.",
+          text: "Our mobile applications (including TimePurse, POcus, Worthly, and future Project Life apps) store data locally on your device by default. We do not collect, transmit, or store personal financial or productivity data on external servers unless explicitly stated within the specific app.",
         },
         {
           heading: "6. External Links",
@@ -59,7 +59,7 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         },
         {
           heading: "7. Third-Party Services",
-          text: "Depending on the specific app or service: Supabase (Worthly) — database and authentication; Paddle (Worthly web) — payment processing; Buy Me a Coffee — voluntary tips; Google Play — app distribution.",
+          text: "Depending on the specific app or service: Supabase (Worthly) — database and authentication; Buy Me a Coffee — voluntary tips; Google Play — app distribution.",
         },
       ],
     },

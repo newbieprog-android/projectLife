@@ -325,6 +325,52 @@ And I still believe my victory is coming.
 — CV
 #FounderJournal #RoadTo33 #StillBuilding #TheLongGame #FromIdeasToApps #TheRestrictionEndsWithMe 🚀`,
     },
+    {
+      id: "founder-journal-july2026",
+      week: "Founder Journal",
+      title: "Thirty-Three",
+      date: "July 17, 2026",
+      content: `Thirty-Three
+
+A few months ago, I wasn't sure if I'd even make it to thirty-three with the same optimism I started this journey with.
+The pressure was everywhere.
+Life Responsibilities. Bills waiting every cutoff. Dreams that felt bigger than my bank account. Days when I questioned whether I was simply chasing ideas that would never become anything more.
+I remember sitting in front of my screen after another exhausting day, wondering if becoming a founder was just another version of hope that reality would eventually erase.
+Then life shifted.
+I went back to employment.
+At first, it felt like I had taken a step backward. I worried that accepting structure meant giving up on freedom. But as the weeks passed, I realized I wasn't abandoning entrepreneurship.
+I was building a stronger foundation for it.
+The corporate world reminded me that successful companies aren't built only with brilliant ideas. They're built with systems, consistency, documentation, process, and patience. Things I rarely appreciated when I was sprinting from one MVP to another.
+And surprisingly…
+I didn't stop building.
+After work, during weekends, and whenever I found the energy, I kept going.
+TimeTag hit a wall I didn't see coming. Google Play rejected it — it needs more testing and another round of iteration before it's ready to resubmit. On top of that, I'm now pivoting to an organization account instead of an individual one, which means new requirements, a D-U-N-S number, and another stretch of unknowns to work through. It's not the update I wanted to write. But it's the truth of where things are.
+Worthly reached another milestone though. Both the web and mobile versions are complete. The web application is fully integrated and usable, transforming what was once just another idea into something tangible.
+Looking back, I realize how much has changed in just one year.
+A year ago, I had dozens of ideas and no products.
+Today, I have products waiting for users.
+No, they aren't generating income yet.
+No, Project Life hasn't become the sustainable business I dream about.
+Not yet.
+But the questions I'm asking have changed.
+I no longer wonder if I can build software.
+I know I can.
+Now I'm learning how to distribute it, market it, earn trust, and eventually build a business around it.
+That's a much better problem to have.
+Turning thirty-three doesn't feel like reaching a destination.
+It feels like standing at the edge of the next chapter.
+I hope this is the year momentum finally begins to stack.
+One user becomes ten.
+One product becomes an ecosystem.
+One side project becomes a real business.
+I still dream of seeing Project Life grow from a personal collection of experiments into something that supports my family, creates opportunities for others, and proves that every late night, every setback, every rejection, and every small step forward was worth it.
+If there's one thing this past year taught me, it's this:
+Progress isn't always measured by revenue.
+Sometimes it's measured by becoming the kind of person capable of building the life you've been imagining all along.
+I'm still building.
+And for the first time in a long time, I believe the foundation is finally starting to take shape.
+— CV`,
+    },    
 
   ];
 
