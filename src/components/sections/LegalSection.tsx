@@ -1,4 +1,4 @@
-import { MacWindow } from "../MacWindow";
+
 
 interface LegalSectionProps {
   type: "terms" | "privacy" | "refunds";
@@ -89,15 +89,15 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
   const selectedContent = content[type];
 
   return (
-    <div className="px-4 py-8">
-      <MacWindow title={selectedContent.title} className="max-w-3xl mx-auto">
+    <div className="page-container inner-page legal-page">
+      <section className="legal-content">
         <div className="space-y-6">
           <h1 className="text-3xl font-bold mb-6">{selectedContent.title}</h1>
           <p className="text-sm text-muted-foreground mb-8">
             Last updated: <span className="font-medium">{LAST_UPDATED}</span>
           </p>
 
-          <div className="space-y-6 max-h-96 overflow-y-auto pr-2">
+          <div className="space-y-6">
             {selectedContent.sections.map((section, index) => (
               <div key={index}>
                 <h2 className="text-lg font-semibold mb-2">{section.heading}</h2>
@@ -120,7 +120,7 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
             </p>
           </div>
         </div>
-      </MacWindow>
+      </section>
     </div>
   );
 };

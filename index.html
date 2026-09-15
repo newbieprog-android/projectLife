@@ -1,21 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#0F0F0F" />
+    <script>
+      (function () {
+        var theme = 'dark';
+        try { if (localStorage.getItem('project-life-theme') === 'light') theme = 'light'; } catch (_) {}
+        document.documentElement.className = theme;
+        document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#F3F1E8' : '#0F0F0F';
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Project Life by CVillegas | Building for the Future</title>
+    <title>Project Life — Experiments in making life better</title>
     <meta
       name="description"
-      content="Know what your time is really worth. TimePurse, Worthly, Liflow, POcus, Vently &amp; Wishly — simple, lovable, complete apps by CVillegas."
+      content="Experiments in making life better. A personal laboratory of things being built, thought about, shipped, and started again."
     />
-    <meta name="author" content="CVillegas" />
+    
     <link rel="canonical" href="https://projectlife.xyz" />
 
     <!-- Open Graph -->
 <meta property="og:site_name" content="Project Life" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Project Life by CVillegas" />
+<meta property="og:title" content="Project Life" />
 <meta
   property="og:description"
   content="Building simple, lovable, complete products for everyday life."
@@ -28,34 +37,22 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Project Life by CVillegas" />
+<meta name="twitter:title" content="Project Life" />
 <meta
   name="twitter:description"
-  content="Know what your time is really worth. Project Life is CVillegas's indie app lineup — TimePurse, Worthly, Liflow, POcus, Vently &amp; Wishly. Simple, lovable, complete."
+  content="Experiments in making life better. A personal digital laboratory."
 />
 <meta name="twitter:image" content="https://projectlife.xyz/og-image.png" />
 
     <!-- Favicon & Apple Touch Icon -->
     <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
 
     <!-- Progressive Web App Manifest -->
 <link rel="manifest" href="/manifest.json" />
 
     <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "CVillegas",
-        "url": "https://projectlife.xyz",
-        "jobTitle": "Solo Founder",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Project Life"
-        }
-      }
-    </script>
+    
 
     <!-- Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>

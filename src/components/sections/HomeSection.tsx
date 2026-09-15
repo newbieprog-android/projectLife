@@ -5,7 +5,7 @@ export const HomeSection = () => {
     <MacWindow title="Project Life" className="max-w-3xl mx-auto">
       <div className="space-y-4">
         <div className="flex items-center gap-4 mb-6">
-          <div className>
+          <div>
                 <img 
                   src={projectLifeLogo} 
                   alt="Project Life Logo" 

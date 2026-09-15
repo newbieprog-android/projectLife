@@ -1,0 +1,364 @@
+export interface JournalEntry { id: string; week: string; title: string; date: string; content: string; isPlaceholder?: boolean; }
+
+export const journalEntries: JournalEntry[] = [
+    {
+      id: "worthly",
+      week: "Worthly — MVP",
+      title: "Worthly MVP Launch",
+      date: "Oct 4, 2025",
+      content: `Worthly, our net worth tracking app, has officially reached the pre-launch milestone. Built entirely on Lovable.dev in true build-in-public style, Worthly simplifies personal finance by helping users track net worth, debts, and savings in one clean dashboard. The authentication system has been finalized with Worthly’s new W monogram branding and support for Google and Apple sign-in (coming soon). My first build focuses on simplicity, security, and clarity, letting early adopters quickly see their financial position at a glance. I am currently in the process for payment integration that will handle subscriptions, payments, and compliance.`,
+    },
+    {
+      id: "worthly-migration",
+      week: "Worthly — Product Independence",
+      title: "Worthly Migration Pivot",
+      date: "Oct 7, 2025",
+      content: `Today marks Worthly’s migration pivot.  
+      I decided to pull the project out of Lovable.dev to gain full control over hosting, backend, and monetization.  
+      The MVP was stable enough to move — and since Supabase already handled the backend, the transition has been smoother than expected.  
+      Worthly’s independence isn’t just a technical milestone — it’s a mindset shift toward building things that I fully own, refine, and grow within Project Life.`,
+    },
+    {
+      id: "stripe-wall",
+      week: "Worthly — Monetization Reality Check",
+      title: "Hit the Wall: Learning What They Don't Tell You in Tutorials",
+      date: "Oct 8, 2025",
+      content: `I thought it was going to be easy, like 1, 2, 3. Every tutorial I watched made payment integration look simple with Stripe. But then reality hit me: Stripe isn't available in my region. That wall stopped me for a moment. Instead of giving up, I decided to step back and understand the real game. Paddle and Lemon Squeezy quickly became my focus. Both handle taxes, compliance, and payouts globally. This is not just about accepting payments anymore — it’s about building infrastructure that can scale beyond borders.`,
+    },
+    {
+      id: "timetag",
+      week: "TimeTag — MVP Live",
+      title: "TimeTag MVP is Live",
+      date: "Oct 9, 2025",
+      content: `Today marks a huge step — TimeTag is officially live.  
+      What started as a small idea about seeing money differently has turned into my first real app.  
+      I built it to remind myself and others that time is our most valuable currency.`,
+    },
+    {
+      id: "worthly-live",
+      week: "Worthly — Own Domain",
+      title: "The Night Worthly Went Live",
+      date: "Oct 11, 2025",
+      content: `Tonight, something small but significant happened — my first app “Worthly” officially went live on its own domain. After countless tweaks, debugging loops, Supabase setups, and OAuth redirects, it finally connected. That moment wasn’t just technical. It was emotional.`,
+    },
+    {
+      id: "founder-dilemma-oct13",
+      week: "Founder Thoughts- Dilemna",
+      title: "The Employee to Entrepreneur Dilemma",
+      date: "Oct 13, 2025",
+      content: `I’ve been thinking a lot about direction lately.  
+      Between waiting for Worthly’s Lemon Squeezy approval and fine-tuning side projects, I’ve started to question if I’m truly on the right path — or just stubbornly walking in circles because I’ve invested too much to stop.  
+
+      There’s this silent tug-of-war inside me: the security of being an employee versus the chaos of building something from nothing.  
+      One gives structure; the other gives freedom.  
+      But lately, freedom feels heavier than structure.  
+      Still, even with that uncertainty, the thought of going back to employment feels like betraying the version of me who dreamed of creating instead of just working.`,
+    },
+    {
+      id: "worthly-update-oct14",
+      week: "Worthly — 95%",
+      title: "Worthly Nears 95% Completion and New Creative Experiments",
+      date: "Oct 14, 2025",
+      content: `Worthly is now 95% live and awaiting Lemon Squeezy approval for payment integration. Meanwhile, I’ve been experimenting with a music player inspired by Windows Media Player, blending it with a Spotify embed. GwisePH is being repurposed into a smarter plan aligned with Project Life.`,
+    },
+    {
+      id: "founder-update-nov7",
+      week: "Founder Thoughts- Recalibration",
+      title: "The Return to the System",
+      date: "Nov 07, 2025",
+      content: `It’s strange how going back to work feels both grounding and haunting at the same time.
+There’s comfort in structure again — the familiar hum of tasks, the steady rhythm of deadlines, the illusion of control. But behind that rhythm, there’s an echo reminding me that this isn’t where I planned to stay.
+
+I used to think employment and entrepreneurship were opposites.
+Now I see they’re just different rooms in the same building — and I’m learning the blueprint from the inside.
+
+Maybe this isn’t a step back. Maybe this is fieldwork.
+A temporary recalibration before the next build.
+
+Paddle is already verified and in process of integration. The portfolio’s still growing, project by project. The fire’s still there — quieter now, but more precise.
+I’m not quitting; I’m studying the system I’ll one day replicate and innovate. 
+
+Employment doesn’t erase the vision. It funds it.
+And while others see a return to normal, I see a chance to rebuild stronger — with patience, clarity, and leverage.
+
+Every builder eventually walks back into the system, not to belong, but to understand how to break free from it for good.
+
+      Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
+    },
+     {
+      id: "founder-update-nov27",
+      week: "Founder Thoughts- Recalibration",
+      title: "The Return to the System",
+      date: "Nov 07, 2025",
+      content: `It’s strange how going back to work feels both grounding and haunting at the same time.
+There’s comfort in structure again — the familiar hum of tasks, the steady rhythm of deadlines, the illusion of control. But behind that rhythm, there’s an echo reminding me that this isn’t where I planned to stay.
+
+I used to think employment and entrepreneurship were opposites.
+Now I see they’re just different rooms in the same building — and I’m learning the blueprint from the inside.
+
+Maybe this isn’t a step back. Maybe this is fieldwork.
+A temporary recalibration before the next build.
+
+Paddle is already verified and in process of integration. The portfolio’s still growing, project by project. The fire’s still there — quieter now, but more precise.
+I’m not quitting; I’m studying the system I’ll one day replicate and innovate. 
+
+Employment doesn’t erase the vision. It funds it.
+And while others see a return to normal, I see a chance to rebuild stronger — with patience, clarity, and leverage.
+
+Every builder eventually walks back into the system, not to belong, but to understand how to break free from it for good.
+
+      Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
+    },
+     {
+      id: "founder-update-dec18",
+      week: "Founder Thoughts- Pause",
+      title: "Momentum paused, discipline intact.",
+      date: "Dec 18, 2025",
+      content: `Right now, I feel the gap between what I want to build and what I’m able to execute. I miss iterating, shipping, and seeing progress move forward. That frustration is real.
+
+The slowdown isn’t because I stopped believing in my projects. It’s because life demanded priority — emergency repairs, personal obiligations to avoid bigger penalties, payments, and things that couldn’t be postponed. Money had to go to stability before creation.
+
+Despite that, I didn’t collapse. I kept reading, learning, and training my body. I worked out consistently 3–4 times a week. I stayed mentally engaged. I protected my health and my thinking even when I couldn’t protect my momentum.
+
+Building is still on my mind. The path is clear: stabilizing first, then build later. I’m not abandoning the builder in me — I’m waiting for the right moment to move again with intent instead of desperation.
+
+This isn’t the end of a chapter. It’s a pause with awareness. When resources open up, I won’t need to find motivation — I’ll just resume. Happy Holidays everyone.
+
+      Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
+    },
+    {
+      id: "founder-update-May09",
+      week: "Founder Thoughts- I'm Back",
+      title: "The Quiet Progress Nobody Sees",
+      date: "May 09, 2026",
+      content: `For a while, I thought going back into employment meant I was drifting away from entrepreneurship.
+I kept looking at the unfinished plans, the unused subscriptions, the slower pace, and convinced myself I was losing momentum.
+
+But this week proved something important.
+
+Even after long shifts, mental exhaustion, and adapting back into structured work, I still managed to finish an app.
+
+TimeTag is now fully usable.
+
+It’s not published yet. The Google Play release still needs final deployment, and the App Store version will come after I save enough for the Apple Developer fee. But the important part is this:
+
+It exists.
+It works.
+I built it.
+
+That realization changed the way I see this entire season of life.
+
+Maybe progress doesn’t always look loud.
+Maybe some seasons are not about explosive growth, but sustainable building. Quiet iterations. Slow consistency. Learning how to carry responsibility while still protecting the dream.
+
+For the longest time, I thought entrepreneurship required escaping employment immediately.
+Now I’m starting to understand something different:
+
+A job can also become infrastructure.
+
+Infrastructure for stability.
+Infrastructure for runway.
+Infrastructure for learning systems, structure, communication, and operations from the inside.
+
+And strangely enough, returning to corporate made me appreciate what startups actually need to survive:
+not just ideas, but systems.
+
+Not just passion, but sustainability.
+
+TimeTag becoming usable while I’m employed proved that I haven’t stopped building.
+I’ve simply entered a different phase of building.
+
+Less chaotic.
+Less impulsive.
+More intentional.
+
+I’m no longer trying to prove that I can start things.
+
+Now I’m learning how to finish them consistently, even when life gets heavier.
+
+Maybe that’s what real founders eventually become:
+people who keep building, regardless of the season they’re in.
+
+#FounderThoughts #TimeTag #ProjectLife #BuilderMindset #IndieFounder #StartupJourney`,
+    },
+    {
+      id: "shipping-season-may26",
+      week: "Shipping Season",
+      title: "Shipping Season",
+      date: "May 26, 2026",
+      content: `There's a different feeling when something moves from "building" to "waiting."
+
+Today, TimeTag officially entered review on Google Play.
+
+After weeks of refining, testing, iterating, and trying to make the experience simple enough to matter, it's now sitting in the hands of the system, waiting for approval. The estimated review window is around 14 days.
+
+Fingers crossed.
+
+It's strange how much emotion can exist in a submit button. Relief, excitement, anxiety, doubt, hope, all mixed together. Part of me keeps refreshing mentally, wondering if something was missed, if policies will suddenly block the release, or if this tiny idea about valuing time differently will finally reach real people.
+
+But regardless of the outcome, something important already happened:
+
+I finished it.
+
+TimeTag is no longer just an idea sitting in my notes.
+It became a real product.
+
+At the same time, Worthly quietly crossed another major milestone.
+
+The mobile and web versions are now fully done and usable. The web app is integrated, functional, and operating as intended. What started as an experiment in personal finance slowly evolved into something real, a product that reflects clarity, ownership, and financial awareness.
+
+Now comes the less glamorous phase of building:
+
+Publishing.
+Compliance.
+Distribution.
+Patience.
+
+I'm starting to understand that startups aren't built only during the exciting moments of creation. Sometimes, building means waiting. Waiting for approvals. Waiting for users. Waiting for feedback. Waiting while continuing to improve anyway.
+
+For the first time, I feel like I'm slowly stepping into a new stage.
+
+Not just someone who starts projects.
+
+Someone who ships them.
+
+Maybe this season isn't about dreaming bigger.
+
+Maybe it's about learning how to finish.
+
+⸻
+
+Current Status
+• TimeTag → Submitted to Google Play, awaiting review (~14 days)
+• Worthly Web → Fully usable and integrated
+• Worthly Mobile → Completed and preparing for publishing
+• Founder Mindset → Learning patience, systems, and sustainable execution
+
+⸻
+
+#FounderJournal #TimeTag #Worthly #ShippingSeason #IndieFounder #ProjectLife #BuildInPublic #StartupJourney`,
+    },
+    {
+      id: "founder-journal-june2026",
+      week: "Founder Journal",
+      title: "Founder Journal",
+      date: "June 15, 2026",
+      content: `Today I feel exhausted.
+Not because of one problem, but because of the accumulation of walls that keep appearing every time I move forward.
+I built five apps.
+I thought shipping the apps would be the hard part.
+Instead, distribution became the challenge.
+TimeTag hit a wall.
+Google Play requirements hit a wall.
+The organization account process is another unknown.
+The D-U-N-S number is another unknown.
+Claude expired.
+Monetization feels further away than I expected.
+Every time I solve one problem, another appears.
+Sometimes it feels like I'm running a marathon where the finish line keeps moving.
+I keep asking myself:
+"When does it get easier?"
+"When does the breakthrough come?"
+"When do I finally experience a win?"
+What frustrates me the most is that I've done the work.
+I've sacrificed sleep.
+I've spent countless nights building.
+I've pushed through self-doubt.
+I've continued even when I didn't know what I was doing.
+And yet the rewards still feel distant.
+But when I zoom out, I see something important.
+One year ago, I was mostly ideas.
+Today, I have products.
+One year ago, I talked about becoming a founder.
+Today, I live like one.
+One year ago, I was waiting for permission.
+Today, I'm building regardless of whether permission exists.
+The victories haven't arrived yet.
+But the evidence is there.
+The apps exist.
+The skills exist.
+The discipline exists.
+The vision exists.
+The work exists.
+Maybe this stage isn't about winning yet.
+Maybe this stage is about proving that I can survive long enough to win.
+Because every founder story sounds exciting after success arrives.
+Nobody talks about the months where it feels like nothing works.
+Nobody talks about the walls.
+Nobody talks about the waiting.
+Nobody talks about building without validation.
+Yet this is where most people quit.
+And I refuse to quit.
+I remind myself why I started.
+I want freedom.
+I want ownership.
+I want to create things that help people.
+I want to build a future where my income is not tied to a timecard.
+I want to prove to myself that I can turn ideas into reality.
+Most importantly, I want to end the cycle.
+The restriction ends with me.
+So today I accept that the road is longer than I expected.
+I accept that the walls will continue to appear.
+I accept that success is taking longer than I want.
+But I also accept that I am further ahead than I was yesterday.
+My job is not to control the breakthrough.
+My job is to keep showing up.
+One app.
+One feature.
+One user.
+One lesson.
+One day at a time.
+I am not done.
+And I still believe my victory is coming.
+
+— CV
+#FounderJournal #RoadTo33 #StillBuilding #TheLongGame #FromIdeasToApps #TheRestrictionEndsWithMe 🚀`,
+    },
+    {
+      id: "founder-journal-july2026",
+      week: "Founder Journal",
+      title: "Thirty-Three",
+      date: "July 17, 2026",
+      content: `Thirty-Three
+
+A few months ago, I wasn't sure if I'd even make it to thirty-three with the same optimism I started this journey with.
+The pressure was everywhere.
+Life Responsibilities. Bills waiting every cutoff. Dreams that felt bigger than my bank account. Days when I questioned whether I was simply chasing ideas that would never become anything more.
+I remember sitting in front of my screen after another exhausting day, wondering if becoming a founder was just another version of hope that reality would eventually erase.
+Then life shifted.
+I went back to employment.
+At first, it felt like I had taken a step backward. I worried that accepting structure meant giving up on freedom. But as the weeks passed, I realized I wasn't abandoning entrepreneurship.
+I was building a stronger foundation for it.
+The corporate world reminded me that successful companies aren't built only with brilliant ideas. They're built with systems, consistency, documentation, process, and patience. Things I rarely appreciated when I was sprinting from one MVP to another.
+And surprisingly…
+I didn't stop building.
+After work, during weekends, and whenever I found the energy, I kept going.
+TimeTag hit a wall I didn't see coming. Google Play rejected it — it needs more testing and another round of iteration before it's ready to resubmit. On top of that, I'm now pivoting to an organization account instead of an individual one, which means new requirements, a D-U-N-S number, and another stretch of unknowns to work through. It's not the update I wanted to write. But it's the truth of where things are.
+Worthly reached another milestone though. Both the web and mobile versions are complete. The web application is fully integrated and usable, transforming what was once just another idea into something tangible.
+Looking back, I realize how much has changed in just one year.
+A year ago, I had dozens of ideas and no products.
+Today, I have products waiting for users.
+No, they aren't generating income yet.
+No, Project Life hasn't become the sustainable business I dream about.
+Not yet.
+But the questions I'm asking have changed.
+I no longer wonder if I can build software.
+I know I can.
+Now I'm learning how to distribute it, market it, earn trust, and eventually build a business around it.
+That's a much better problem to have.
+Turning thirty-three doesn't feel like reaching a destination.
+It feels like standing at the edge of the next chapter.
+I hope this is the year momentum finally begins to stack.
+One user becomes ten.
+One product becomes an ecosystem.
+One side project becomes a real business.
+I still dream of seeing Project Life grow from a personal collection of experiments into something that supports my family, creates opportunities for others, and proves that every late night, every setback, every rejection, and every small step forward was worth it.
+If there's one thing this past year taught me, it's this:
+Progress isn't always measured by revenue.
+Sometimes it's measured by becoming the kind of person capable of building the life you've been imagining all along.
+I'm still building.
+And for the first time in a long time, I believe the foundation is finally starting to take shape.
+— CV`,
+    },    
+
+];

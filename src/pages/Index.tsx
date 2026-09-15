@@ -1,53 +1,9 @@
-import { useState } from "react";
-import { MenuBar } from "@/components/MenuBar";
-import { Dock } from "@/components/Dock";
-import { HomeSection } from "@/components/sections/HomeSection";
-import { ProjectsSection } from "@/components/sections/ProjectsSection";
-import { JournalSection } from "@/components/sections/JournalSection";
-import { LegalSection } from "@/components/sections/LegalSection";
-import { ContactSection } from "@/components/sections/ContactSection";
-import spaceBg from "@/assets/space-bg.jpg";
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { experiments, archiveEntries } from '@/data/projectLife';
+import { journalEntries } from '@/data/journal';
+import { ExperimentCard, JournalPreview, StatusBadge, WindowFrame } from '@/components/pl/Elements';
 
-const Index = () => {
-  const [activeSection, setActiveSection] = useState("home");
-
-  const renderSection = () => {
-    switch (activeSection) {
-      case "home":
-        return <HomeSection />;
-      case "projects":
-        return <ProjectsSection />;
-      case "journal":
-        return <JournalSection />;
-      case "terms":
-        return <LegalSection type="terms" />;
-      case "privacy":
-        return <LegalSection type="privacy" />;
-      case "refunds":
-        return <LegalSection type="refunds" />;
-      case "contact":
-        return <ContactSection />;
-      default:
-        return <HomeSection />;
-    }
-  };
-
-  return (
-    <div 
-      className="min-h-screen bg-background bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${spaceBg})` }}
-    >
-      <MenuBar activeSection={activeSection} onNavigate={setActiveSection} />
-      
-      <main className="pt-20 pb-32 px-4">
-        <div className="animate-fade-in">
-          {renderSection()}
-        </div>
-      </main>
-
-      <Dock onNavigate={setActiveSection} />
-    </div>
-  );
-};
-
-export default Index;
+export default function Index() {
+  return <><section className="hero page-container"><div className="hero-copy"><div className="hero-meta eyebrow"><span><i className="status-dot"/>STATUS: BUILDING</span><span>/</span><span>MODE: EXPERIMENTING</span></div><h1>Experiments in<br/>making life<br/><em>better.</em></h1><p className="hero-description">A collection of things being built, thought about, shipped, abandoned, and started again.</p><div className="hero-actions"><Link className="primary-link" to="/lab">ENTER THE LAB <ArrowRight size={16}/></Link><Link className="text-link" to="/think">READ THE JOURNAL <ArrowRight size={16}/></Link></div></div><div className="hero-workspace"><WindowFrame title="PROJECT LIFE / LAB 01" className="current-experiment"><span className="eyebrow">CURRENT EXPERIMENT</span><h2>TIMEPURSE</h2><p>Purchase → hours converter.</p><StatusBadge>BUILDING</StatusBadge><Link className="text-link" to="/lab/timepurse">OPEN EXPERIMENT <ArrowRight size={16}/></Link></WindowFrame><Link className="cv-signature" to="/the-builder" aria-label="About the builder">— <span>CV</span></Link></div></section><section className="page-container currently"><span className="eyebrow">CURRENTLY</span><div className="currently-grid"><div className="metric-grid">{[[String(experiments.length).padStart(2,'0'),'Experiments'],[String(experiments.filter(e=>e.status === 'BUILDING').length).padStart(2,'0'),'Building'],[String(journalEntries.length).padStart(2,'0'),'Journal entries'],['∞','Questions']].map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div><div className="current-notes"><div><span className="eyebrow">CURRENTLY BUILDING</span><p>Small tools for seeing time, money, and everyday life a little differently.</p></div><div><span className="eyebrow">IN THE ARCHIVE</span><p>{archiveEntries.length} experiments recorded, and three views of the original site. Nothing disappears.</p></div></div></div></section><section className="page-container section"><div className="section-intro"><div><span className="eyebrow">FROM THE LAB</span><h2>Things being experimented with.</h2></div><Link className="text-link" to="/lab">ALL EXPERIMENTS <ArrowRight size={16}/></Link></div><div className="experiment-grid">{experiments.slice(0,3).map((project,index)=><ExperimentCard key={project.id} {...{project,index}}/>)}</div></section><section className="page-container section journal-home"><div className="section-intro"><div><span className="eyebrow">THINK</span><h2>Notes from the experiment.</h2></div><Link className="text-link" to="/think">ALL ENTRIES <ArrowRight size={16}/></Link></div><JournalPreview/></section></>;
+}
