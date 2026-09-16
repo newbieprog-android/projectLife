@@ -9,10 +9,10 @@ export const experiments = [
 ];
 export const archiveEntries = [
   { name: 'TIMETAG', outcome: 'renamed TIMEPURSE', category: 'RENAMED', description: 'The name evolved. The question stayed: what is your time worth?' },
-  { name: 'GWISEPH', outcome: 'became GETWISEPH', category: 'REBUILT', description: 'A new direction for an earlier experiment.' },
+  { name: 'GWISEPH', outcome: 'became GETWISEPH', category: 'PAUSED', description: 'A new direction for an earlier experiment.' },
   { name: 'PROMPILOT', outcome: 'experiment archived', category: 'ARCHIVED', description: 'An idea that became part of the learning process.' },
   { name: 'CLARITY', outcome: 'experiment paused', category: 'PAUSED', description: 'Some ideas need room before their next iteration.' },
-  { name: 'WORTHLY', outcome: 'became FreeDamn', category: 'BUILDING', description: 'From an early MVP to a product with its own home.' },
+  { name: 'WORTHLY', outcome: 'renamed FreeDamn', category: 'RENAMED', description: 'From an early MVP to a product with its own home.' },
 ];
 export const originalScreens = [
   { src: '/archive/original-home.png', title: 'Home', caption: 'The original introduction, framed as a desktop window.', alt: 'Original Project Life home page with galaxy wallpaper, a Mac-style introduction window and application dock.' },

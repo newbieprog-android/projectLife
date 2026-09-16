@@ -85,31 +85,7 @@ Every builder eventually walks back into the system, not to belong, but to under
 
       Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
     },
-     {
-      id: "founder-update-nov27",
-      week: "Founder Thoughts- Recalibration",
-      title: "The Return to the System",
-      date: "Nov 07, 2025",
-      content: `It’s strange how going back to work feels both grounding and haunting at the same time.
-There’s comfort in structure again — the familiar hum of tasks, the steady rhythm of deadlines, the illusion of control. But behind that rhythm, there’s an echo reminding me that this isn’t where I planned to stay.
-
-I used to think employment and entrepreneurship were opposites.
-Now I see they’re just different rooms in the same building — and I’m learning the blueprint from the inside.
-
-Maybe this isn’t a step back. Maybe this is fieldwork.
-A temporary recalibration before the next build.
-
-Paddle is already verified and in process of integration. The portfolio’s still growing, project by project. The fire’s still there — quieter now, but more precise.
-I’m not quitting; I’m studying the system I’ll one day replicate and innovate. 
-
-Employment doesn’t erase the vision. It funds it.
-And while others see a return to normal, I see a chance to rebuild stronger — with patience, clarity, and leverage.
-
-Every builder eventually walks back into the system, not to belong, but to understand how to break free from it for good.
-
-      Tags: #FounderLog #Worthly #PaddleIntegration #ProjectLife #Reentry #Structure #StartupMindset #SaaSBuilder`,
-    },
-     {
+      {
       id: "founder-update-dec18",
       week: "Founder Thoughts- Pause",
       title: "Momentum paused, discipline intact.",
@@ -360,5 +336,57 @@ I'm still building.
 And for the first time in a long time, I believe the foundation is finally starting to take shape.
 — CV`,
     },    
+{
+      id: "founder-journal-sep026",
+      week: "Founder Journal",
+      title: "Finding a way back",
+      date: "September 16, 2026",
+      content: `Finding a way back'
 
+I thought coming back would begin with opening the projects again and continuing where I left off.
+
+Instead, I found myself looking at the Project Life website.
+
+It had become a record of an earlier version of the work. The projects were there, but the reason behind them was harder to see. Some of the names no longer felt right. Some of the ideas had grown beyond the way I first described them.
+
+Updating the site started to feel like the most honest place to begin.
+
+Before I could decide what to build next, I needed to understand what Project Life had become. I needed one place where the projects could make sense together, even while they were still changing.
+
+That process made me reconsider the apps themselves.
+
+Worthly began as a way to track net worth, but the number was never the part I cared about most. What interested me was what the number represented: freedom, options, and the possibility of having more control over your time.
+
+FreeDamn feels closer to that idea. It is less polite, but also more honest about the feeling behind the product. I am still figuring out what it will become, but at least the name points toward the question I actually want to explore.
+
+Liflow had a similar problem. The name described a system, but not the experience of needing it.
+
+Keep It Together came from recognizing what the app is really trying to help with. Life gives us appointments, bills, chores, plans, health concerns, and small responsibilities that are easy to forget until they become urgent. Sometimes the goal is not to optimize everything. Sometimes you are simply trying to keep it together.
+
+These changes might look like rebranding from the outside. For me, they are signs that I am paying closer attention to what I was trying to build in the first place.
+
+Still, having clearer ideas has not made returning easy.
+
+Life did not pause while I was away. My job continued to take most of my useful energy. Responsibilities accumulated. Even rest started to feel like something I had to make room for.
+
+When life consumes that much of you, returning to a personal project is not as simple as becoming motivated again. The interest can come back before the energy does. You can want to build and still struggle to sit down. You can spend the whole day thinking about what you want to make, then reach the evening with nothing left to give it.
+
+That has probably been the hardest part to accept.
+
+I kept imagining that my return should look decisive. I would redesign the site, rebuild the apps, post consistently, and recover the months I had lost.
+
+But I cannot recover those months, and trying to do everything at once would only recreate the conditions that made me disappear.
+
+So I am trying to return differently.
+
+The website is not a declaration that everything is figured out. It is a place to organize what I believe now. The new names are not promises that the products are finished. They are better starting points. Sharing again does not mean I have solved the problem of balancing work, life, and building.
+
+It only means I am making room for this again.
+
+Maybe coming back is less about recovering momentum and more about rebuilding a relationship with the work. Opening it without judging how long it has been. Letting old decisions change. Choosing one meaningful thing and staying with it long enough to see where it goes.
+
+There is still a lot I want to make.
+
+I am just learning that wanting it is only the beginning. The real work is finding a way for it to live alongside the rest of my life.`,
+    },   
 ];
