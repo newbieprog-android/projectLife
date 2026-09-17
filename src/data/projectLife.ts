@@ -1,7 +1,15 @@
 export const experiments = [
   { id: 'timepurse', name: 'TIMEPURSE', description: 'See the real cost of everything in hours of your life.', category: 'TIME / MONEY', status: 'BUILDING', detail: 'Originally TimeTag. A purchase-to-hours converter built around a simple question: is it worth your time?', url: 'https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31' },
   { id: 'freedamn', name: 'FreeDamn', description: 'Your Money Should Set you FREE.', category: 'MONEY', status: 'EXPERIMENT', detail: 'A simpler way to understand net worth, debts, and savings. Follow its development in the journal.', url: 'https://worthly.projectlife.xyz' },
-  { id: 'keepittogether', name: 'KeepItTogether', description: 'Less Mental Tabs, More Room For Life' },
+  {
+    id: 'keepittogether',
+    name: 'KeepItTogether',
+    description: 'Less Mental Tabs, More Room For Life',
+    category: 'LIFE / SYSTEMS',
+    status: 'EXPERIMENT',
+    detail: 'One place for the upkeep, paperwork, reminders, and loose ends that keep everyday life running.',
+    url: '/keep-it-together/index.html',
+  },
   { id: 'pocus', name: 'POCUS', description: 'One goal. Total focus. No excuses.', category: 'ATTENTION', status: 'BUILDING', detail: 'Focus, priorities, and goals in one place.' },
   { id: 'packhappens', name: 'PACKHAPPENS', description: 'A better way to remember what to pack.', category: 'LIFE / TRAVEL', status: 'EXPERIMENT', detail: 'An experiment in taking the mental overhead out of getting ready.' },
   { id: 'wishly', name: 'WISHLY', description: 'The right gift, every time.', category: 'LIFE / PEOPLE', status: 'EXPERIMENT', detail: 'A shared wishlist for people who hate guessing gifts.' },
