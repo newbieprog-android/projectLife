@@ -62,7 +62,7 @@ export const ProjectsSection = () => {
           <strong>Fuel the Build. Stay Caffeinated.</strong> More ideas are brewing! Support the grind and help bring the next Project Life app to life — one coffee at a time.
         </>
       ),
-      url: "https://buymeacoffee.com/projectlif3",
+      url: "https://buymeacoffee.com/projectlifebycv",
       status: "☕ Buy Me a Coffee",
     },
   ];

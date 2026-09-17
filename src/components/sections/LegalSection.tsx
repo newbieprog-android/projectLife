@@ -80,7 +80,7 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         },
         {
           heading: "4. Contact for Support",
-          text: "For any questions about refunds or to request a refund, please email us at supp.projectlif3@gmail.com with your order details.",
+          text: "For any questions about refunds or to request a refund, please email us at projectlifebycv@gmail.com with your order details.",
         },
       ],
     },

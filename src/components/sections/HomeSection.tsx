@@ -33,7 +33,7 @@ export const HomeSection = () => {
                    </p>
 
           <a
-            href="https://buymeacoffee.com/projectlif3"
+            href="https://buymeacoffee.com/projectlifebycv"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 text-xs font-medium px-2 py-1 rounded bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors"
