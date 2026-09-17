@@ -1,6 +1,6 @@
 export const experiments = [
   { id: 'timepurse', name: 'TIMEPURSE', description: 'See the real cost of everything in hours of your life.', category: 'TIME / MONEY', status: 'BUILDING', detail: 'Originally TimeTag. A purchase-to-hours converter built around a simple question: is it worth your time?', url: 'https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31' },
-  { id: 'freedamn', name: 'FreeDamn', description: 'Your Money Should Set you FREE.', category: 'MONEY', status: 'EXPERIMENT', detail: 'A simpler way to understand net worth, debts, and savings. Follow its development in the journal.', url: 'https://worthly.projectlife.xyz' },
+  { id: 'freedamn', name: 'FreeDamn', description: 'Your Money Should Set you FREE.', category: 'MONEY', status: 'EXPERIMENT', detail: 'A simpler way to understand net worth, debts, and savings. Follow its development in the journal.', url: '/freedamn/index.html' },
   {
     id: 'keepittogether',
     name: 'KeepItTogether',
