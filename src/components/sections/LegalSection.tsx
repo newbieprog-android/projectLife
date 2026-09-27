@@ -6,7 +6,7 @@ interface LegalSectionProps {
 
 export const LegalSection = ({ type }: LegalSectionProps) => {
   // ✅ Single date constant — manually editable
-  const LAST_UPDATED = "May 15, 2026";
+  const LAST_UPDATED = type === "privacy" ? "September 28, 2026" : "May 15, 2026";
 
   const content = {
     terms: {
@@ -51,14 +51,22 @@ export const LegalSection = ({ type }: LegalSectionProps) => {
         },
         {
           heading: "5. Mobile Applications",
-          text: "Our mobile applications (including TimePurse, POcus, Worthly, and future Project Life apps) store data locally on your device by default. We do not collect, transmit, or store personal financial or productivity data on external servers unless explicitly stated within the specific app.",
+          text: "Our mobile applications (including timePurse, POcus, Worthly, and future Project Life apps) store data locally on your device by default. We do not collect, transmit, or store personal financial or productivity data on external servers unless explicitly stated within the specific app.",
         },
         {
-          heading: "6. External Links",
+          heading: "6. timePurse",
+          text: "timePurse stores the purchases, wishlist items, pay details, work schedule, currency, and preferences you enter on your device. If you select a CSV file, the app reads it on your device to import supported purchase rows. It does not require an account, send tracker entries to our servers, or use advertising or analytics. Reset All Data erases locally stored tracker data. Device backups are controlled by your operating system settings.",
+        },
+        {
+          heading: "7. Optional Supporter purchase",
+          text: "If available, timePurse offers an optional one-time Supporter badge through Google Play. Google processes the payment and provides purchase status and transaction information to the app so it can grant or restore the badge. We do not receive your payment card details. The app stores badge status locally for offline display. We may receive purchase reports in Play Console. The badge adds no tracker features. For Google's data practices, see the Google Play privacy policy.",
+        },
+        {
+          heading: "8. External Links",
           text: "Some of our apps contain links to external services including but not limited to buymeacoffee.com for voluntary developer support. These external services have their own privacy policies which govern their data practices. We encourage you to review the privacy policies of any third-party services you interact with through our apps.",
         },
         {
-          heading: "7. Third-Party Services",
+          heading: "9. Third-Party Services",
           text: "Depending on the specific app or service: Supabase (Worthly) — database and authentication; Buy Me a Coffee — voluntary tips; Google Play — app distribution.",
         },
       ],
