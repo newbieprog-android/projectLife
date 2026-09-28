@@ -1,0 +1,43 @@
+@config "../../tailwind.timepurse.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --background: oklch(0.985 0.015 93);
+  --foreground: oklch(0.17 0.027 258);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.17 0.027 258);
+  --primary: oklch(0.50 0.24 260);
+  --primary-foreground: oklch(0.985 0.015 93);
+  --secondary: oklch(0.94 0.035 255);
+  --secondary-foreground: oklch(0.31 0.14 260);
+  --muted: oklch(0.94 0.014 92);
+  --muted-foreground: oklch(0.43 0.023 255);
+  --accent: oklch(0.68 0.18 28);
+  --accent-foreground: oklch(0.17 0.027 258);
+  --border: oklch(0.83 0.021 95);
+  --input: oklch(0.83 0.021 95);
+  --ring: oklch(0.50 0.24 260);
+  --cream: oklch(0.985 0.015 93);
+  --cream-foreground: oklch(0.17 0.027 258);
+  --coral: oklch(0.68 0.18 28);
+  --blue-soft: oklch(0.87 0.07 250);
+  --blue-deep: oklch(0.32 0.18 260);
+  --paper: oklch(0.965 0.014 90);
+}
+
+@layer base {
+  * { border-color: var(--border); }
+  html { scroll-behavior: smooth; }
+  body { background: var(--background); color: var(--foreground); font-family: var(--font-sans); }
+  ::selection { background: var(--coral); color: var(--foreground); }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

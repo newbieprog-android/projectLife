@@ -17,7 +17,7 @@ export const ProjectsSection = () => {
       description: <>Your time is the price. Now you'll know if it's worth it.</>,
       status: "🚀 Now Live",
       note: "First shipped under Project Life.",
-      url: "https://preview.builtwithrocket.new/68bb54f59ee55900142929cc31",
+      url: "/timepurse/index.html",
       launchDate: "October 2025",
     },
     {
