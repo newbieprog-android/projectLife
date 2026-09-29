@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
+        packhappens: path.resolve(__dirname, "packhappens/index.html"),
         timepurse: path.resolve(__dirname, "timepurse/index.html"),
       },
     },

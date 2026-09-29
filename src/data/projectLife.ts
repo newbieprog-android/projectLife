@@ -11,7 +11,7 @@ export const experiments = [
     url: '/keep-it-together/index.html',
   },
   { id: 'pocus', name: 'POCUS', description: 'One goal. Total focus. No excuses.', category: 'ATTENTION', status: 'BUILDING', detail: 'Focus, priorities, and goals in one place.' },
-  { id: 'packhappens', name: 'PACKHAPPENS', description: 'A better way to remember what to pack.', category: 'LIFE / TRAVEL', status: 'EXPERIMENT', detail: 'An experiment in taking the mental overhead out of getting ready.' },
+  { id: 'packhappens', name: 'PACKHAPPENS', description: 'A better way to remember what to pack.', category: 'LIFE / TRAVEL', status: 'EXPERIMENT', detail: 'An experiment in taking the mental overhead out of getting ready.', url: '/packhappens/index.html' },
   { id: 'wishly', name: 'WISHLY', description: 'The right gift, every time.', category: 'LIFE / PEOPLE', status: 'EXPERIMENT', detail: 'A shared wishlist for people who hate guessing gifts.' },
   { id: 'vently', name: 'VENTLY', description: 'Finally, someone who just listens.', category: 'LIFE / REFLECTION', status: 'EXPERIMENT', detail: 'An original Project Life idea. A little room to think out loud.' },
 ];
