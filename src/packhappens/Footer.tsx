@@ -1,4 +1,4 @@
-const links = [{label: "Project Life Lab", href: "/lab/packhappens"}, {label: "Privacy Policy", href: "/privacy"}, {label: "Terms", href: "/terms"}, {label: "Contact", href: "mailto:projectlifebycv@gmail.com"}];
+const links = [{label: "Project Life Lab", href: "/lab/packhappens"}, {label: "Privacy Policy", href: "/packhappens/privacy.html"}, {label: "Terms of Service", href: "/packhappens/terms.html"}, {label: "Contact", href: "mailto:projectlifebycv@gmail.com"}];
 
 export function Footer() {
   return (
@@ -7,9 +7,7 @@ export function Footer() {
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
             <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-amber text-[0.95rem]">
-                🎒
-              </span>
+              <img src="/packhappens/app-icon.png" alt="" width="36" height="36" className="h-9 w-9 rounded-xl" loading="lazy" />
               <span className="text-[1.05rem] font-extrabold tracking-tight text-cream">
                 Packhappens
               </span>

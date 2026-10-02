@@ -99,7 +99,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-[0.82rem] font-medium text-espresso/45">
-          Pro is a one-time unlock. Buy it once, keep it forever.
+          Pro is a one-time purchase through your Google Play account. No Packhappens registration needed. ₱99 in the Philippines; local prices vary by country.
         </p>
       </div>
     </section>

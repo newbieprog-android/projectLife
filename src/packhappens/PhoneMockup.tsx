@@ -105,11 +105,9 @@ function StatusBar() {
 
 function BottomNav() {
   const items = [
-    { icon: "🏠", label: "Trips", active: true },
-    { icon: "🧠", label: "Dump" },
-    { icon: "✅", label: "Pack" },
-    { icon: "🏠", label: "Return" },
-    { icon: "🙂", label: "You" },
+    { icon: "🏠", label: "Home", active: true },
+    { icon: "🧳", label: "Trip" },
+    { icon: "⚙️", label: "Settings" },
   ];
 
   return (

@@ -4,9 +4,7 @@ import { PhoneMockup } from "./PhoneMockup";
 function Wordmark() {
   return (
     <a href="#top" className="flex items-center gap-2.5">
-      <span className="grid h-9 w-9 place-items-center rounded-xl bg-espresso text-[0.95rem]">
-        🎒
-      </span>
+      <img src="/packhappens/app-icon.png" alt="" width="36" height="36" className="h-9 w-9 rounded-xl" />
       <span className="text-[1.05rem] font-extrabold tracking-tight text-espresso">
         Packhappens
       </span>
@@ -105,7 +103,7 @@ export function Hero() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.8rem] font-medium text-espresso/50">
-              {["No account needed", "No subscription", "Works offline"].map((line) => (
+              {["No account needed", "No subscription", "Offline checklists"].map((line) => (
                 <span key={line} className="flex items-center gap-1.5">
                   <svg viewBox="0 0 14 14" className="h-3.5 w-3.5 text-amber-deep" aria-hidden>
                     <path
