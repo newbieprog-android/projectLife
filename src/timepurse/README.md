@@ -6,6 +6,6 @@ The downloaded route, styles, and content configuration are adapted to this proj
 
 - Preview `/timepurse/index.html` with `npm run dev`, or `npm run build` followed by `npm run preview`.
 - The Timepurse Lab entry at `/lab/timepurse` links to this page through `src/data/projectLife.ts`.
-- Edit `site-content.ts` to change screenshot captions and the public Google Play URL. Set `GOOGLE_PLAY_LIVE` to `true` only after the public listing is confirmed live; both calls to action and the release FAQ follow this flag.
+- Edit `site-content.ts` to change screenshot captions and the public Google Play URL. `GOOGLE_PLAY_LIVE` is `true` for the launched app; both calls to action, the hero announcement, and the release FAQ follow this flag.
 - `TimepurseLanding.tsx` contains the landing content; `styles.css` and `tailwind.timepurse.config.js` contain its styling.
 - Page metadata lives in `timepurse/index.html`. Vite builds both this entry and the main Project Life site.

@@ -1,5 +1,5 @@
 /** Set to true only after the public Google Play listing is confirmed live. */
-export const GOOGLE_PLAY_LIVE = false;
+export const GOOGLE_PLAY_LIVE = true;
 export const GOOGLE_PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.projectlifebycv.timetag";
 

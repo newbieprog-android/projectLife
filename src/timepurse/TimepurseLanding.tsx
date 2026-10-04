@@ -16,7 +16,7 @@ const faqs = [
   { question: "What happens with different currencies?", answer: "Amounts in different currencies stay separate. timePurse does not convert currencies or combine them into one total." },
   { question: "Where is my tracker data stored?", answer: "The purchases, wishlist items, pay details, work schedule, and preferences you enter are stored on your device. You can read more in the privacy policy." },
   { question: "Can I bring in my purchases?", answer: "Yes. timePurse supports importing purchases from a CSV file." },
-  { question: "When can I get it on Google Play?", answer: GOOGLE_PLAY_LIVE ? "timePurse is available on Google Play. Use the download button on this page to visit the public listing." : "The production release is currently under Google Play review. The public listing will be linked here once it is confirmed live." },
+  { question: GOOGLE_PLAY_LIVE ? "Where can I download timePurse?" : "When can I get it on Google Play?", answer: GOOGLE_PLAY_LIVE ? "timePurse is available on Google Play. Use the download button on this page to visit the public listing." : "The production release is currently under Google Play review. The public listing will be linked here once it is confirmed live." },
 ];
 
 function StoreAction({ light = false }: { light?: boolean }) {
@@ -60,7 +60,7 @@ export default function TimepurseLanding() {
         <section id="top" className="relative overflow-hidden bg-primary text-primary-foreground">
           <div className="mx-auto grid max-w-7xl items-center gap-3 px-5 pb-3 pt-24 sm:px-8 sm:pb-16 sm:pt-28 lg:min-h-[min(800px,93svh)] lg:grid-cols-[1.15fr_.85fr] lg:gap-10 lg:px-12 lg:pb-24 lg:pt-36">
             <div className="relative z-10 max-w-[720px]">
-              <div className="mb-4 flex items-center gap-2.5 text-[10px] font-bold uppercase tracking-[0.16em] text-cream/80 sm:mb-7 sm:text-xs"><span className="h-1.5 w-1.5 rounded-full bg-coral" /> A different way to see spending</div>
+              <div className="mb-4 flex items-center gap-2.5 text-[10px] font-bold uppercase tracking-[0.16em] text-cream/80 sm:mb-7 sm:text-xs"><span className="h-1.5 w-1.5 rounded-full bg-coral" /> {GOOGLE_PLAY_LIVE ? "Now available on Google Play" : "A different way to see spending"}</div>
               <h1 className="font-display text-[2.8rem] font-bold leading-[1.02] tracking-normal sm:text-[clamp(3.25rem,7vw,6.9rem)] sm:leading-[.98]">See what your spending costs <span className="text-cream">in time.</span></h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-cream/90 sm:mt-7 sm:text-xl">That purchase has a price. timePurse shows you the hours behind it, so you can decide what feels worth it.</p>
               <div className="mt-6 sm:mt-9"><StoreAction light /></div>

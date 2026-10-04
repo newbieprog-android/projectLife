@@ -389,4 +389,57 @@ There is still a lot I want to make.
 
 I am just learning that wanting it is only the beginning. The real work is finding a way for it to live alongside the rest of my life.`,
     },   
+    {
+      id: "something-made-it-out",
+      week: "Founder Journal",
+      title: "Something Made It Out",
+      date: "October 4, 2026",
+      content: `Timepurse is live.
+
+It feels strange writing that because there was a point where I was checking builds, fixing things, thinking about apps almost every night. Then work got busy. Days became weeks, weeks became months, and Project Life slowly became something I mostly thought about instead of something I actively worked on.
+
+I even had a post drafted about not being able to build because of my 9-to-5.
+
+I never posted it.
+
+Maybe that's fitting.
+
+Because I don't want that period to be remembered only as the time I stopped. I came back.
+
+And when I did, I didn't come back to the exact same Project Life I left behind.
+
+Worthly started becoming FreeDamn. Liflow became Keep It Together. I started redesigning Project Life itself. Old ideas started getting questioned again. Some survived. Some changed. Some probably won't make it.
+
+And somewhere in the middle of all that, Timepurse made it through.
+
+It's now sitting on Google Play.
+
+That's such a small sentence for something that once existed only in my head.
+
+I know publishing an app doesn't mean I've made it. It doesn't mean people will download it. It definitely doesn't mean I've figured out distribution, monetization, or how to turn Project Life into the company I imagine it becoming.
+
+If anything, publishing exposes the next problem.
+
+I know how to build things now.
+
+The question is whether I can get people to care about them.
+
+But tonight, I don't want to immediately turn this into another problem to solve.
+
+I want to let this one count.
+
+There is now something in the world that wouldn't exist if I hadn't decided to make it.
+
+Someone I've never met can search for Timepurse, install it on their phone, and use an idea that once lived inside my notes and late-night conversations.
+
+That's pretty damn cool.
+
+Especially after months of feeling like my 9-to-5 had swallowed the builder in me.
+
+Apparently, he was still there.
+
+Just busy.
+
+**Project Life continues.**`,
+    },
 ];

@@ -7,7 +7,7 @@ import { journalEntries } from '@/data/journal';
 export function SectionHeader({ label, title, description }: { label: string; title: string; description?: string }) {
   return <header className="section-heading"><span className="eyebrow">{label}</span><h1>{title}</h1>{description && <p>{description}</p>}</header>;
 }
-export function StatusBadge({ children }: { children: ReactNode }) { return <span className={`status-badge ${children === 'BUILDING' || children === 'SHIPPED' ? 'is-active' : ''}`}><i />{children}</span>; }
+export function StatusBadge({ children }: { children: ReactNode }) { return <span className={`status-badge ${children === 'BUILDING' || children === 'SHIPPED' || children === 'LIVE' ? 'is-active' : ''}`}><i />{children}</span>; }
 export function WindowFrame({ title, children, className = '' }: { title: string; children: ReactNode; className?: string }) {
   return <section className={`window-frame ${className}`}><div className="window-bar"><span className="window-dots" aria-hidden="true"><i/><i/><i/></span><span className="eyebrow">{title}</span></div><div className="window-content">{children}</div></section>;
 }
