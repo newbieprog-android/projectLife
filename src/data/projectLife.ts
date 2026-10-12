@@ -1,17 +1,20 @@
+import { GOOGLE_PLAY_URL as TIMEPURSE_GOOGLE_PLAY_URL } from '@/timepurse/site-content';
+import { GOOGLE_PLAY_URL as PACKHAPPENS_GOOGLE_PLAY_URL } from '@/packhappens/site-content';
+
 export const experiments = [
-  { id: 'timepurse', name: 'TIMEPURSE', description: 'See the real cost of everything in hours of your life.', category: 'TIME / MONEY', status: 'LIVE', detail: 'Originally TimeTag. Now available on Google Play. A purchase-to-hours converter built around a simple question: is it worth your time?', url: '/timepurse/index.html' },
-  { id: 'freedamn', name: 'FreeDamn', description: 'Your Money Should Set you FREE.', category: 'MONEY', status: 'EXPERIMENT', detail: 'A simpler way to understand net worth, debts, and savings. Follow its development in the journal.', url: '/freedamn/index.html' },
+  { id: 'timepurse', name: 'TIMEPURSE', description: 'See the real cost of everything in hours of your life.', category: 'TIME / MONEY', status: 'LIVE', detail: 'Originally TimeTag. Now available on Google Play. A purchase-to-hours converter built around a simple question: is it worth your time?', url: '/timepurse/index.html', googlePlayUrl: TIMEPURSE_GOOGLE_PLAY_URL },
+  { id: 'freedamn', name: 'FreeDamn', description: 'Your Money Should Set you FREE.', category: 'MONEY', status: 'TRANSITIONING FROM WORTHLY', detail: 'Transitioning from Worthly into FreeDamn. A simpler way to understand net worth, debts, and savings. Follow its development in the journal.', url: '/freedamn/index.html' },
   {
     id: 'keepittogether',
     name: 'KeepItTogether',
     description: 'Less Mental Tabs, More Room For Life',
     category: 'LIFE / SYSTEMS',
-    status: 'EXPERIMENT',
-    detail: 'One place for the upkeep, paperwork, reminders, and loose ends that keep everyday life running.',
+    status: 'GOING LIVE',
+    detail: 'Preparing for review. One place for the upkeep, paperwork, reminders, and loose ends that keep everyday life running.',
     url: '/keep-it-together/index.html',
   },
   { id: 'pocus', name: 'POCUS', description: 'One goal. Total focus. No excuses.', category: 'ATTENTION', status: 'BUILDING', detail: 'Focus, priorities, and goals in one place.' },
-  { id: 'packhappens', name: 'PACKHAPPENS', description: 'A better way to remember what to pack.', category: 'LIFE / TRAVEL', status: 'EXPERIMENT', detail: 'An experiment in taking the mental overhead out of getting ready.', url: '/packhappens/index.html' },
+  { id: 'packhappens', name: 'PACKHAPPENS', description: 'A better way to remember what to pack.', category: 'LIFE / TRAVEL', status: 'LIVE', detail: 'Now available on Google Play. Take the mental overhead out of getting ready and remember what comes home.', url: '/packhappens/index.html', googlePlayUrl: PACKHAPPENS_GOOGLE_PLAY_URL },
   { id: 'wishly', name: 'WISHLY', description: 'The right gift, every time.', category: 'LIFE / PEOPLE', status: 'EXPERIMENT', detail: 'A shared wishlist for people who hate guessing gifts.' },
   { id: 'vently', name: 'VENTLY', description: 'Finally, someone who just listens.', category: 'LIFE / REFLECTION', status: 'EXPERIMENT', detail: 'An original Project Life idea. A little room to think out loud.' },
 ];

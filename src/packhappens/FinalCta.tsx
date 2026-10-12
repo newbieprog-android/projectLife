@@ -1,3 +1,4 @@
+import { GOOGLE_PLAY_URL } from "./site-content";
 import { Button } from "./Button";
 
 function PlayGlyph() {
@@ -45,20 +46,24 @@ export function FinalCta() {
           Your charger deserves to come home.
         </h2>
         <p className="reveal mt-6 text-[1.08rem] leading-relaxed text-espresso/75">
-          Coming soon on Google Play. No account. No subscription. Just pack.
+          Now available on Google Play. No account. No subscription. Just pack.
         </p>
 
         <div className="reveal mt-10 flex justify-center">
-          <Button variant="play" size="2xl" className="gap-3.5" disabled>
+          <Button variant="play" size="2xl" className="gap-3.5" asChild>
+            <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
             <PlayGlyph />
             <span className="flex flex-col items-start leading-tight">
               <span className="text-[0.62rem] font-bold tracking-[0.18em] uppercase opacity-70">
-                Coming soon on
+                Get it on
               </span>
               <span className="text-[1.05rem] font-extrabold">Google Play</span>
             </span>
+            </a>
           </Button>
         </div>
+
+        <p className="mt-4 text-sm text-espresso/60">iOS — Coming soon</p>
 
         <p className="mt-6 text-[0.8rem] font-semibold text-espresso/55">
           🕯️ Made with love by a guy who now checks Room 412 twice.

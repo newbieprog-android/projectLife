@@ -442,4 +442,62 @@ Just busy.
 
 **Project Life continues.**`,
     },
+    {
+      id: "october-things-are-finally-moving",
+      week: "Founder Journal",
+      title: "October: Things Are Finally Moving",
+      date: "October 13, 2026",
+      content: `It's funny how quickly things can change.
+
+Not too long ago, I was writing about how work had taken over my life. I barely had time to build, let alone share anything about what I was working on.
+
+Now, somehow, we've had one of the most productive months in Project Life.
+
+Two apps are officially live on Google Play. Another one is heading toward review. Worthly is becoming FreeDamn, and I'm still figuring out how to turn that vision of financial freedom into something genuinely useful.
+
+And then there's iOS.
+
+The apps are waiting. The Apple Developer account isn't.
+
+So if anyone wants to sponsor a struggling indie developer's Apple Developer membership, my inbox is open. Kidding. Mostly.
+
+But jokes aside, seeing these apps published feels different from finishing them locally.
+
+Before, I could say I built something.
+
+Now I can say I shipped something.
+
+And while that might sound like a small distinction, it means a lot to someone who spent years thinking about what he wanted to create.
+
+I still have my day job. Still have responsibilities. Still have financial problems to work through. Nothing about my circumstances has magically changed because two apps went live.
+
+And I don't want to pretend otherwise.
+
+The apps aren't generating meaningful income yet. I haven't figured out marketing. I don't know whether these products will find their audience.
+
+But for the first time, those questions feel like problems I actually get to solve.
+
+Because the products exist.
+
+I'm also starting to realize that having more apps doesn't necessarily mean having a stronger business.
+
+At some point, I'll have to stop measuring progress by how many things I can publish and start paying attention to how many people I'm actually helping.
+
+That's probably the next chapter.
+
+For now, I'm proud of what we've managed to accomplish this month.
+
+Not because everything is going according to plan.
+
+It rarely does.
+
+But because after all the interruptions, unfinished ideas, and late nights, Project Life is slowly becoming something real.
+
+And maybe that's enough to call this a good month.
+
+**Two apps live. More on the way. Still employed. Still building.**
+
+*Project Life*
+*Experiments in making life better.*`,
+    },
 ];

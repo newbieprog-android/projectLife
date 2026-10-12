@@ -7,7 +7,7 @@ The route, nine landing components, and original stylesheet were downloaded from
 - Landing page: `/packhappens/index.html`.
 - Lab entry: `/lab/packhappens`, linked through `src/data/projectLife.ts`.
 - Run `npm run dev`, or `npm run build` then `npm run preview`.
-- Google Play download and Pro purchase buttons are intentionally disabled and marked coming soon, as requested. When launching, update Hero, Pricing, and FinalCta with the confirmed public listing and update the HTML metadata.
+- Google Play download buttons link to the live listing configured in `site-content.ts`. Pro upgrades are purchased in the app. iOS is coming soon.
 - Footer links lead to Project Life's Lab, the app-specific `/packhappens/privacy.html` and `/packhappens/terms.html` pages, and the existing support email.
 - The legal pages are standalone HTML entries in `vite.config.ts`, so they build alongside the landing page and work without JavaScript. Each has a link back to the landing page.
 - Legal content is synchronized from `/Users/macexpert/packhappens/lib/features/legal/legal_documents.dart`. Run `dart run tool/export_legal_documents.dart /Users/macexpert/retro-lifes-showcase/packhappens` from the Flutter app repository after editing it.

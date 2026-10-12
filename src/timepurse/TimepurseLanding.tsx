@@ -31,9 +31,12 @@ function StoreAction({ light = false }: { light?: boolean }) {
     );
   }
   return (
+    <div className="flex flex-col items-start gap-2">
     <Button asChild size="lg" className={light ? "h-14 rounded-md bg-cream px-6 text-base font-bold text-cream-foreground hover:bg-cream/90" : "h-14 rounded-md bg-primary px-6 text-base font-bold text-primary-foreground hover:bg-primary/90"}>
       <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">Get it on Google Play <ArrowUpRight aria-hidden="true" /></a>
     </Button>
+    <span className={light ? "text-sm text-cream/80" : "text-sm text-muted-foreground"}>iOS — Coming soon</span>
+    </div>
   );
 }
 

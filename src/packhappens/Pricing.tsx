@@ -1,3 +1,4 @@
+import { GOOGLE_PLAY_URL } from "./site-content";
 import { Button } from "./Button";
 
 const plans = [
@@ -86,12 +87,12 @@ export function Pricing() {
                   ))}
                 </ul>
                 <Button
-                  disabled
+                  asChild
                   variant={isPro ? "espresso" : "line"}
                   size="xl"
                   className="mt-9 w-full"
                 >
-                  {isPro ? "Pro coming soon" : "Coming soon on Google Play"}
+                  <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">{isPro ? "Get the app to upgrade" : "Download on Google Play"}</a>
                 </Button>
               </div>
             );

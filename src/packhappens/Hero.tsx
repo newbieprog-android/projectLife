@@ -1,3 +1,4 @@
+import { GOOGLE_PLAY_URL } from "./site-content";
 import { Button } from "./Button";
 import { PhoneMockup } from "./PhoneMockup";
 
@@ -82,8 +83,8 @@ export function Hero() {
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3.5">
-              <Button variant="amber" size="xl" disabled>
-                Coming soon on Google Play
+              <Button variant="amber" size="xl" asChild>
+                <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
               </Button>
               <Button variant="line" size="xl" asChild>
                 <a href="#how-it-works">
@@ -101,6 +102,8 @@ export function Hero() {
                 </a>
               </Button>
             </div>
+
+            <p className="mt-4 text-sm text-espresso/60">iOS — Coming soon</p>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.8rem] font-medium text-espresso/50">
               {["No account needed", "No subscription", "Offline checklists"].map((line) => (
